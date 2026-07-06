@@ -1,32 +1,42 @@
-# 안심이 공개 웹사이트
+﻿# 안심이 공개 웹사이트
 
-이 저장소는 안심이 프로젝트의 공개 웹페이지를 관리합니다. 공개 가능한 활동 요약, 결과물, 프로토타입 링크만 포함합니다.
+안심이는 시민의 생활 조건에서 재난안전 정보를 다시 묻고, 더 쓸 수 있는 공공서비스와 데이터를 실험하는 프로젝트입니다. 이 저장소는 공개 웹사이트 구동에 필요한 페이지와 공개 가능한 자산만 관리합니다.
 
 ## 저장소 역할
 
-- 이 저장소: 공개 웹사이트용 저장소
-- 비공개 아카이브: 원자료와 내부 작업 기록 보관
+- `ansimi`: 공개 웹사이트 저장소
+- `ansimi-archive`: 원본 자료, 내부 작업 기록, 비공개 검토 자료를 보관하는 아카이브 저장소
 
-## 공개 전 확인
+## 공개 전 확인 기준
 
-공개 저장소에 파일을 옮기기 전 다음 항목을 확인합니다.
-
-- 실명, 전화번호, 이메일, 계정명 제거
-- 얼굴이 보이는 사진 제거 또는 공개 동의 확인
-- 집 주소, 상세 동선, 민감한 위치 정보 제거
-- 인터뷰 원문 대신 익명화된 요약 사용
-- 내부 회의 링크와 비공개 문서 링크 제거
-- 공개 가능한 외부 링크인지 확인
+- 개인정보, 연락처, 내부 회의 링크 제거
+- 비공개 원본 문서와 작업용 스프레드시트 제거
+- 공개 동의가 불명확한 이미지와 녹화 자료 제외
+- 내부 분석 자료는 시민용 툴킷, 가이드북, 체크리스트 형태로 재편집한 뒤 공개
+- 웹페이지 구동에 필요한 공개 자산만 `assets/`에 복사
 
 ## 페이지 구조
 
 ```text
 index.html
-meethack.html
+blog.html
+blog/
+  2024-09-meethack-disaster-data-users.html
+  2025-02-minimeet-safety-data-platform.html
+  2025-04-meethack-disaster-bag.html
+  2025-11-interview-disaster-preparedness.html
 projects/
-  2026-dangyeopgong.html
+  index.html
+  2024-disaster-app-ux.html
+  2025-disaster-bag-workshop.html
+  2026-shelter-data.html
+assets/
+  data/
+    shelter-data-proposal.public.json
+  images/
 styles.css
 script.js
 ```
 
 정적 HTML, CSS, JavaScript만 사용합니다. GitHub Pages에서 바로 배포할 수 있습니다.
+
