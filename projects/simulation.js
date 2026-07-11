@@ -290,17 +290,9 @@ const game = {
             // Remove any leading numbers or dots (e.g. "1. ")
             const cleanText = choice.text.replace(/^\d+\.\s*/, '').trim();
             
-            // Get label (위험 or 안전) from DB property directly
-            const label = choice.label || '';
-
             const scenarioDiv = document.createElement('div');
             scenarioDiv.className = 'choice-scenario';
-            if (label) {
-                const labelClass = label === '위험' ? 'modifier-neg' : 'modifier-pos';
-                scenarioDiv.innerHTML = `<span class="${labelClass}">[${label}]</span> ${cleanText}`;
-            } else {
-                scenarioDiv.textContent = cleanText;
-            }
+            scenarioDiv.textContent = cleanText;
             
             const modifiersDiv = document.createElement('div');
             modifiersDiv.className = 'choice-modifiers';

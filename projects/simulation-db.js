@@ -15,7 +15,7 @@ window.SIMULATION_DB = {
             startStep: "inf_start"
         },
         foreign: {
-            name: "마이클 (외국인 유학생)",
+            name: "투안 (외국인 유학생)",
             avatar: "🌎",
             avatarImg: "../assets/images/pixel_avatar_foreigner.png",
             startStep: "for_start"
@@ -243,7 +243,7 @@ window.SIMULATION_DB = {
             ]
         },
 
-        // --- FOREIGNER STUDENT (마이클 - 화학재난) ---
+        // --- FOREIGNER STUDENT (투안 - 화학재난) ---
         for_start: {
             nodeName: "for_start",
             location: "동네 주택가 원룸 앞",
@@ -330,14 +330,14 @@ window.SIMULATION_DB = {
             avatar: "📱",
             text: "앱의 돋보기 메뉴를 켜도 글씨가 너무 작고 복잡해 어디를 눌러야 무더위쉼터가 나오는지 헤맵니다. 화면 밝기가 낮아 눈이 침침하고, 골방 열기 속에서 시간만 계속 흘러갑니다.",
             choices: [
-                { text: "스마트폰 검색을 포기하고 실버카에 의지해 밖으로 나간다.", label: "안전", hpMod: -0.5, timeMod: -60, nextStep: "eld_walk" }
+                { text: "스마트폰 검색을 포기하고 보행기에 의지해 밖으로 나간다.", label: "안전", hpMod: -0.5, timeMod: -60, nextStep: "eld_walk" }
             ]
         },
         eld_walk: {
             nodeName: "eld_walk",
             location: "아스팔트 골목길 언덕",
             avatar: "☀️",
-            text: "작열하는 태양 볕 아래 그늘 한 점 없는 가파른 골목 언덕을 실버카를 짚어가며 천천히 올라갑니다. 땅바닥에서 올라오는 열기로 가슴이 두근거리고 호흡이 벅깝니다.",
+            text: "작열하는 태양 볕 아래 그늘 한 점 없는 가파른 골목 언덕을 보행기를 짚어가며 천천히 올라갑니다. 땅바닥에서 올라오는 열기로 가슴이 두근거리고 호흡이 벅깝니다.",
             choices: [
                 { text: "언덕 중턱에 위치한 동네 노인 경로당 쉼터로 들어간다.", label: "안전", hpMod: 0, timeMod: -60, nextStep: "eld_rest_center" }
             ]
@@ -349,7 +349,7 @@ window.SIMULATION_DB = {
             text: "경로당에 다다랐으나 문이 단단히 잠겨 있습니다. 작은 인쇄지에 '냉방비 지원금 소진 및 주말 미운영으로 인해 휴관합니다'라고 쓰여 있습니다. 주소만 보고 찾아왔는데 헛걸음했습니다.",
             choices: [
                 { text: "주민센터 쉼터까지 무작정 다시 한 정거장 더 걸어간다.", label: "위험", hpMod: -1.5, timeMod: -120, nextStep: "eld_closed_door" },
-                { text: "실버카에 붙은 주민센터 대표 전화번호 스티커를 찾아 전화를 건다.", label: "안전", hpMod: 0, timeMod: -120, nextStep: "eld_phone_search" }
+                { text: "보행기에 붙은 주민센터 대표 전화번호 스티커를 찾아 전화를 건다.", label: "안전", hpMod: 0, timeMod: -120, nextStep: "eld_phone_search" }
             ]
         },
         eld_closed_door: {
