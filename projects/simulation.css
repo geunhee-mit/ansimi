@@ -357,6 +357,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden; /* Hide image overflow */
+}
+
+.char-avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
 }
 
 .char-info {
@@ -424,6 +433,7 @@ body {
     align-items: center;
     font-size: 2.2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+    overflow: hidden; /* Hide image overflow */
 }
 
 /* Heart HP bar */
@@ -588,6 +598,31 @@ body {
 .choices-stack .pixel-btn:active {
     transform: translateY(2px);
     box-shadow: 0 2px 0 var(--retro-ink);
+}
+
+/* Choice line layout & bold colored modifiers */
+.choice-scenario {
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: var(--retro-ink);
+}
+
+.choice-modifiers {
+    font-size: 0.95rem;
+    margin-top: 4px;
+    font-weight: bold;
+}
+
+.modifier-neg {
+    color: var(--retro-red) !important;
+}
+
+.modifier-pos {
+    color: var(--retro-green) !important;
+}
+
+.modifier-neutral {
+    color: #888888 !important; /* Neutral gray */
 }
 
 /* Result Screen */

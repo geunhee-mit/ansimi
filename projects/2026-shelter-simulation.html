@@ -43,46 +43,53 @@
             <!-- CHARACTER SELECT SCREEN -->
             <section id="screen-char-select" class="game-section">
                 <div class="pixel-title-sm">캐릭터 선택 (SELECT CHARACTER)</div>
-                <p class="select-desc">대피를 진행할 시민의 상황을 선택하세요.</p>
                 
                 <div class="char-grid">
                     <!-- Character 1: Wheelchair User (Min-woo) -->
                     <div class="char-card retro-box clickable" onclick="game.selectCharacter('wheelchair')">
-                        <div class="char-avatar">♿</div>
+                        <div class="char-avatar">
+                            <img src="../assets/images/pixel_avatar_wheelchair.png" alt="민우" class="char-avatar-img">
+                        </div>
                         <div class="char-info">
-                            <span class="char-name">민우 (휠체어 이용자)</span>
-                            <span class="char-stat">재난: 침수 / 난이도: ★★★</span>
-                            <p class="char-desc">물리적 턱과 계단에 취약하며, 무단차 입구와 엘리베이터가 중요합니다.</p>
+                            <span class="char-name">민우 (지진 / 휠체어 이용자)</span>
+                            <span class="char-stat">주요 특성: 엘리베이터 오작동 대비, 계단 피난 대기, 무단차 보행로 대피</span>
+                            <p class="char-desc">평화로운 오후, 갑자기 집이 격렬하게 흔들립니다. 여진 발생 전 운동장 대피소로 대피하라는 문자가 옵니다.</p>
                         </div>
                     </div>
                     
                     <!-- Character 2: Parent with Baby (Hyeon-ah) -->
                     <div class="char-card retro-box clickable" onclick="game.selectCharacter('infant')">
-                        <div class="char-avatar">👶</div>
+                        <div class="char-avatar">
+                            <img src="../assets/images/pixel_avatar_infant.png" alt="현아" class="char-avatar-img">
+                        </div>
                         <div class="char-info">
-                            <span class="char-name">현아 (영유아 동반 가족)</span>
-                            <span class="char-stat">재난: 침수 / 난이도: ★★☆</span>
-                            <p class="char-desc">아이를 동반하여 속도가 느립니다. 유모차 경로와 임시 수유실 정보가 필요합니다.</p>
+                            <span class="char-name">현아 (침수 / 영유아 동반)</span>
+                            <span class="char-stat">주요 특성: 아기 띠 이동 시 기동성 지연, 기저귀 교환실 및 따뜻한 식수 필수</span>
+                            <p class="char-desc">창밖 도로에 흙탕물이 급격하게 차오릅니다. 비상 가방을 메고 근처 강당 대피소로의 대피 명령을 수신했습니다.</p>
                         </div>
                     </div>
 
                     <!-- Character 3: Foreigner Student (Michael) -->
                     <div class="char-card retro-box clickable" onclick="game.selectCharacter('foreign')">
-                        <div class="char-avatar">🌎</div>
+                        <div class="char-avatar">
+                            <img src="../assets/images/pixel_avatar_foreigner.png" alt="마이클" class="char-avatar-img">
+                        </div>
                         <div class="char-info">
-                            <span class="char-name">마이클 (외국인 유학생)</span>
-                            <span class="char-stat">재난: 화학물질 누출 / 난이도: ★★☆</span>
-                            <p class="char-desc">한국어 재난문자를 해독해야 합니다. 영문 표지판과 지하 대피 정보가 생존을 가릅니다.</p>
+                            <span class="char-name">마이클 (화학재난 / 외국인 유학생)</span>
+                            <span class="char-stat">주요 특성: 한글 재난문자 해독 필요, 영문 안내 이정표 필수, 가스 회피 고지대 이동</span>
+                            <p class="char-desc">동네에 가스 냄새가 나고 화학 공장 사이렌이 울립니다. 해독 불가한 한국어 대피 재난 문자가 도착합니다.</p>
                         </div>
                     </div>
 
                     <!-- Character 4: Elderly (Soon-im) -->
                     <div class="char-card retro-box clickable" onclick="game.selectCharacter('elderly')">
-                        <div class="char-avatar">👵</div>
+                        <div class="char-avatar">
+                            <img src="../assets/images/pixel_avatar_elderly.png" alt="김순임" class="char-avatar-img">
+                        </div>
                         <div class="char-info">
-                            <span class="char-name">김순임 (독거 노인)</span>
-                            <span class="char-stat">재난: 폭염 / 난이도: ★☆☆</span>
-                            <p class="char-desc">거동이 다소 불편하고 스마트폰 사용이 서툽니다. 무더위쉼터 연락처와 개방 정보가 중요합니다.</p>
+                            <span class="char-name">김순임 (폭염 / 독거 노인)</span>
+                            <span class="char-stat">주요 특성: 어플 쉼터 검색 차단, 유선 쉼터 연락망 의존, 급격한 탈수 방지 식수 보충</span>
+                            <p class="char-desc">에어컨이 고장 나 방 안 온도가 38도까지 올랐습니다. 어지럼증을 느끼고 무더위 쉼터로 대피해야 합니다.</p>
                         </div>
                     </div>
                 </div>
@@ -162,6 +169,7 @@
         </div>
     </div>
 
+    <script src="simulation-db.js"></script>
     <script src="simulation.js"></script>
 </body>
 </html>
