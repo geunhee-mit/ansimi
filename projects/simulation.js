@@ -146,7 +146,7 @@ const game = {
             nodeName: "wc_start",
             location: "지하철역 8번 출구 인근",
             avatar: "♿",
-            image: "../assets/images/pixel_wheelchair.png",
+            image: "../assets/images/pixel_flooding.png",
             text: "갑작스러운 폭우로 동네 일대 침수가 시작되었습니다. 가장 가까운 대피소인 초등학교로 향해야 합니다. 지도를 보니 골목길 지름길과 큰길 우회로가 보입니다.",
             choices: [
                 { text: "1. 골목길 지름길로 가기 (지름길 선택)", nextStep: "wc_alley" },
@@ -256,7 +256,7 @@ const game = {
             nodeName: "inf_start",
             location: "지하철역 인근 골목",
             avatar: "📍",
-            image: "../assets/images/pixel_infant.png",
+            image: "../assets/images/pixel_flooding.png",
             text: "칭얼대는 아이를 아기 띠로 업고, 비상 가방을 멘 채 대피를 준비합니다. 빗줄기가 굵어져 지하철역 사거리 큰길에 물이 고이기 시작했습니다.",
             choices: [
                 { text: "1. 아이 손을 꼭 붙잡고 물이 고인 사거리를 건넌다. (HP -0.5, 시간 -1분)", nextStep: "inf_flood", hpMod: -0.5, timeMod: -60 },
@@ -326,7 +326,7 @@ const game = {
             nodeName: "for_start",
             location: "동네 주택가 원룸 앞",
             avatar: "📍",
-            image: "../assets/images/pixel_foreigner.png",
+            image: "../assets/images/pixel_chemical.png",
             text: "갑자기 인근 지역 방향 하늘에서 사이렌 경보음이 크게 울립니다. 스마트폰에 삐- 소리와 함께 재난 긴급 알림 문자가 한글로 수신되었지만, 한글을 읽기 어려워 무슨 상황인지 모릅니다. 매캐한 가스 냄새가 바람을 타고 불어옵니다.",
             choices: [
                 { text: "1. 번역 앱을 켜서 문자 이미지를 번역한다. (시간 -1분)", nextStep: "for_translate", timeMod: -60 },
@@ -397,7 +397,7 @@ const game = {
             nodeName: "eld_start",
             location: "독거노인 자택 안방",
             avatar: "👵",
-            image: "../assets/images/pixel_elderly.png",
+            image: "../assets/images/pixel_heatwave.png",
             text: "한낮 폭염 경보 기온이 38도를 돌파했습니다. 오래된 에어컨이 실외기 과열로 멈춰 좁은 방 안이 찜통으로 변했습니다. 머리가 핑 돕니다. 동네 무더위쉼터로 대피해야 합니다.",
             choices: [
                 { text: "1. 익숙하지 않은 스마트폰을 켜서 인터넷이나 재난안전 앱으로 무더위쉼터를 검색해본다. (시간 -3분)", nextStep: "eld_app", timeMod: -180 },
@@ -589,16 +589,17 @@ const game = {
             if (stepData.image) {
                 bgContainer.style.backgroundImage = `url(${stepData.image})`;
             } else {
-                // Persona-specific fallback ambient gradients instead of duplicating the title screen image!
-                let gradient = 'linear-gradient(180deg, #172026 0%, #0b0f12 100%)';
+                // Persona-specific fallback ambient images instead of duplicating the title screen image!
+                let bgImage = 'none';
+                let fallbackGradient = 'linear-gradient(180deg, #172026 0%, #0b0f12 100%)';
                 if (this.state.persona === 'wheelchair' || this.state.persona === 'infant') {
-                    gradient = 'linear-gradient(180deg, #12212b 0%, #080e12 100%)'; // Stormy flood blue-grey
+                    bgImage = 'url(../assets/images/pixel_flooding.png)';
                 } else if (this.state.persona === 'foreign') {
-                    gradient = 'linear-gradient(180deg, #24112c 0%, #0a040e 100%)'; // Hazard chemical purple
+                    bgImage = 'url(../assets/images/pixel_chemical.png)';
                 } else if (this.state.persona === 'elderly') {
-                    gradient = 'linear-gradient(180deg, #321c0f 0%, #110703 100%)'; // Intense heatwave orange-brown
+                    bgImage = 'url(../assets/images/pixel_heatwave.png)';
                 }
-                bgContainer.style.backgroundImage = gradient;
+                bgContainer.style.backgroundImage = bgImage !== 'none' ? bgImage : fallbackGradient;
             }
             bgContainer.style.backgroundSize = 'cover';
             bgContainer.style.backgroundPosition = 'center';
