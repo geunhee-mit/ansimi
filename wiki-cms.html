@@ -48,7 +48,7 @@
     <main style="padding: 40px clamp(20px, 4vw, 60px);">
         <div id="cms-workspace" style="display: none;">
             <!-- Warning block if encrypted token is missing -->
-            <div id="config-warning" class="cms-card" style="display: none; background: rgba(167, 71, 36, 0.1); border-color: var(--red); margin-bottom: 24px;">
+            <div id="config-warning" class="cms-card" style="display: none; background: rgba(167, 71, 36, 0.1); border-color: var(--red); margin-bottom: 24px; position: relative; width: 100%; box-sizing: border-box;">
                 <strong style="color: var(--red); font-size: 1.1rem; display: block; margin-bottom: 8px;">⚠️ 깃허브 원격 게시 불가 상태</strong>
                 <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
                     `assets/data/cms-config.js` 파일에 암호화된 토큰(`encryptedToken`)이 등록되어 있지 않습니다. 현재는 **오프라인 편집 및 파일 다운로드**만 가능합니다. 
@@ -87,9 +87,9 @@
                 </aside>
 
                 <!-- Main work area -->
-                <div class="cms-main-content">
+                <div class="cms-main-content" style="display: flex; flex-direction: column; gap: 24px; width: 100%; min-width: 0;">
                     <!-- 2. Editor Container (Hidden by default, shown when creating/editing) -->
-                    <div id="editor-container" class="cms-card" style="display: none;">
+                    <div id="editor-container" class="cms-card" style="display: none; position: relative; width: 100%; box-sizing: border-box;">
                         <h3 id="editor-heading" style="margin-top: 0; margin-bottom: 20px; font-size: 1.4rem;">새 위키 문서 작성</h3>
                         <form id="editor-form" onsubmit="return false;">
                             <input type="hidden" id="entry-index" value="">
@@ -126,11 +126,11 @@
                             <!-- Markdown Split Editor -->
                             <div class="form-group">
                                 <label>마크다운 본문 편집 및 실시간 미리보기</label>
-                                <div class="editor-split" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; height: 50vh; min-height: 380px; box-sizing: border-box;">
-                                    <div class="editor-field" style="display: flex; flex-direction: column; height: 100%;">
-                                        <textarea id="entry-content" class="form-textarea" placeholder="마크다운 양식으로 내용을 작성하세요..." required style="flex: 1; resize: none; height: 100%; min-height: 0; box-sizing: border-box; padding: 10px 14px; border: 3px solid var(--ink); font-family: inherit; font-size: 1rem; background: var(--paper); color: var(--ink);"></textarea>
+                                <div class="editor-split" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; height: 50vh; min-height: 380px; box-sizing: border-box; overflow: hidden;">
+                                    <div class="editor-field" style="display: flex; flex-direction: column; height: 100%; min-height: 0; overflow: hidden;">
+                                        <textarea id="entry-content" class="form-textarea" placeholder="마크다운 양식으로 내용을 작성하세요..." required style="flex: 1; resize: none; height: 100%; min-height: 0; box-sizing: border-box; padding: 10px 14px; border: 3px solid var(--ink); font-family: inherit; font-size: 1rem; background: var(--paper); color: var(--ink); overflow-y: auto;"></textarea>
                                     </div>
-                                    <div class="editor-field" style="display: flex; flex-direction: column; height: 100%;">
+                                    <div class="editor-field" style="display: flex; flex-direction: column; height: 100%; min-height: 0; overflow: hidden;">
                                         <div id="entry-preview" class="preview-pane" style="border: 3px solid var(--ink); padding: 16px; background: #fbfaf5; overflow-y: auto; flex: 1; height: 100%; max-height: 100%; box-sizing: border-box; text-align: left;"></div>
                                     </div>
                                 </div>
@@ -145,7 +145,7 @@
                     </div>
 
                     <!-- 3. Token Encryption Helper Panel (Hidden by default) -->
-                    <div id="encryptor-container" class="cms-card" style="display: none; background: var(--soft);">
+                    <div id="encryptor-container" class="cms-card" style="display: none; background: var(--soft); position: relative; width: 100%; box-sizing: border-box;">
                         <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px;">
                             <h3 style="margin: 0; font-size: 1.3rem;">🔑 토큰 암호화 도구 (관리자 최초 1회 설정용)</h3>
                             <button id="close-encryptor-btn" style="background: none; border: none; font-size: 1.5rem; cursor: pointer; padding: 0;">×</button>
@@ -174,7 +174,7 @@
                     </div>
 
                     <!-- 4. Wiki Database Article Grid Listing -->
-                    <div class="cms-card">
+                    <div class="cms-card" style="position: relative; width: 100%; box-sizing: border-box;">
                         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 12px;">
                             <h3 style="margin: 0; font-size: 1.3rem;">전체 지식노트 목록 (<span id="total-count">0</span>개)</h3>
                             <div style="display: flex; gap: 10px;">
