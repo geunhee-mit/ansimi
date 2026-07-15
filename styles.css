@@ -1496,9 +1496,17 @@ body.has-custom-cursor #start-simulation-btn-2 {
     padding: clamp(24px, 4vw, 40px) !important;
     box-shadow: var(--shadow) !important;
     width: 100% !important;
+    max-width: none !important;
     z-index: 5;
     position: relative;
     transform: rotate(-0.5deg);
+}
+
+.hero-content-box h1,
+.hero-content-box p,
+.hero-content-box .lead,
+.hero-content-box .fact-row {
+    max-width: none !important;
 }
 
 .project-hero-content {
@@ -1821,4 +1829,101 @@ body.has-custom-cursor #start-simulation-btn-2 {
     height: 8px;
     border-radius: 50%;
     background: currentColor;
+}
+
+/* Progress/Process Flowchart styling */
+.process-flow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 28px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.process-step {
+    background: var(--paper);
+    border: 3px solid var(--ink);
+    padding: 20px;
+    box-shadow: 4px 4px 0 var(--ink);
+    position: relative;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.process-step::after {
+    content: "→";
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--ink);
+    z-index: 10;
+}
+
+.process-step:last-child::after {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .process-flow {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+    .process-step::after {
+        content: "↓";
+        right: 50%;
+        bottom: -32px;
+        top: auto;
+        transform: translateX(50%);
+    }
+}
+
+/* 3-Column Grid Layout for Personas and Insights */
+.three-col-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+@media (max-width: 900px) {
+    .three-col-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Fluid background hero styling for project pages matching index.html */
+.project-fluid-hero {
+    min-height: 70vh !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    padding: clamp(40px, 8vw, 80px) clamp(20px, 5vw, 60px) !important;
+    border-bottom: 3px solid var(--ink);
+}
+
+.hero-2024 {
+    background: var(--paper) url('assets/images/hero_2024.png') no-repeat right 5% center !important;
+    background-size: contain !important;
+}
+
+.hero-2025 {
+    background: var(--paper) url('assets/images/hero_2025.png') no-repeat right 5% center !important;
+    background-size: contain !important;
+}
+
+.hero-2026 {
+    background: var(--paper) url('assets/images/hero_2026.png') no-repeat right 5% center !important;
+    background-size: contain !important;
+}
+
+@media (max-width: 980px) {
+    .hero-2024, .hero-2025, .hero-2026 {
+        background-position: center bottom 20px !important;
+        background-size: 70% auto !important;
+        min-height: auto !important;
+        padding-bottom: 360px !important;
+        display: block !important;
+    }
 }

@@ -239,26 +239,28 @@
             <a href="../blog.html">블로그</a>
         </nav>
     </header>
-    <main>
-        <section class="project-hero">
-            <div class="project-hero-content" style="position: relative;">
+    <main>        <section class="fluid-hero project-fluid-hero hero-2025">
+            <div class="hero-content-box" style="position: relative;">
                 <a href="../wiki.html?tag=재난가방" class="sticker" style="top: -20px; right: 20px; transform: rotate(5deg);">재난가방 위키 ↗</a>
                 <p class="eyebrow">2025 Workshop + Prototype</p>
                 <h1>재난가방 워크샵과 프로토타입</h1>
-                <p class="lead">재난가방을 물품 목록이 아니라 상황별 준비 경험으로 보고, 시민 워크샵에서 나온 페르소나와 시나리오를 서비스 프로토타입 방향으로 구체화했습니다.</p>
-                <div class="fact-row">
+                <p class="lead">재난가방을 단순한 물품 목록이 아닌 상황별 준비 경험으로 정의하고, 다양한 가구 형태에 따른 실질적인 배낭 구성과 가방 적재 프로토타입을 설계했습니다.</p>
+                <div class="fact-row" style="margin-bottom: 24px;">
                     <span>시민 워크샵</span>
                     <span>페르소나·시나리오</span>
                     <span>서비스 프로토타입</span>
                 </div>
-                <div class="hero-actions" style="margin-top: 24px; display: flex !important;">
-                    <a href="https://p-ansim-fto.vercel.app/" target="_blank" rel="noreferrer" class="button primary" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center; font-size: 1.1rem; padding: 12px 30px; min-height: 52px; border-radius: 8px;">재난가방 서비스 프로토타입 보기 ↗</a>
+                <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                    <a href="#checklist-simulator-section" class="button primary" style="text-decoration: none; font-weight: 900; display: inline-flex; align-items: center; gap: 8px; box-shadow: var(--shadow);">
+                        🎒 나만의 생존 가방 꾸리기 시작
+                    </a>
+                    <a href="https://p-ansim-fto.vercel.app/" target="_blank" rel="noreferrer" class="button secondary" style="text-decoration: none; font-weight: 900; display: inline-flex; align-items: center; gap: 8px; border: 3px solid var(--ink);">
+                        원형 프로토타입 보기 ↗
+                    </a>
                 </div>
             </div>
-            <div class="project-hero-media">
-                <img src="../assets/images/hero_2025.png" alt="재난가방 워크샵과 프로토타입 히어로 이미지">
-            </div>
         </section>
+
         <section class="section">
             <div class="statement">
                 <p class="eyebrow">Design Question</p>
@@ -266,32 +268,76 @@
                 <p>재난가방 안내는 보통 생수, 손전등, 의약품처럼 물품을 나열합니다. 하지만 실제 준비에서는 가족 구성, 아이의 연령, 이동 수단, 복용약, 반려동물, 대피소 체류 가능성에 따라 우선순위가 달라집니다.</p>
             </div>
         </section>
-        <section class="section muted">
-            <div class="scenario-grid detailed">
-                <article class="scenario-card">
-                    <h3>워크샵</h3>
-                    <p>참가자들은 재난 상황별로 필요한 준비물과 판단 지점을 적고, 서로 다른 생활 조건에서 누락되는 정보를 찾았습니다.</p>
-                </article>
-                <article class="scenario-card">
-                    <h3>페르소나</h3>
-                    <p>영유아 동반 가정, 고령자, 지병이 있는 사람, 반려동물 동반 가구처럼 준비물과 행동 순서가 달라지는 수요자를 구분했습니다.</p>
-                </article>
-                <article class="scenario-card">
-                    <h3>프로토타입</h3>
-                    <p>준비물 목록, 사용 상황, 보호자 확인 질문, 공식 안내 링크가 한 흐름으로 이어지는 서비스 구조를 검토했습니다.</p>
-                </article>
-                <article class="scenario-card">
-                    <h3>공개 전환</h3>
-                    <p>내부 발표자료를 그대로 올리는 대신, 시민용 점검표와 워크샵 진행 카드 형태로 다시 편집하는 것을 다음 산출로 둡니다.</p>
-                </article>
+
+        <!-- Project Process Section -->
+        <section class="section" style="border-top: 3px solid var(--ink); padding-top: 40px; margin-top: 20px;">
+            <div class="section-heading compact">
+                <p class="eyebrow">Project Process</p>
+                <h2>프로젝트 추진 프로세스</h2>
+                <p>2025년 생존 배낭 워크숍 프로젝트는 다음과 같이 진행되었습니다.</p>
+            </div>
+            <div class="process-flow">
+                <div class="process-step">
+                    <span style="font-size: 0.8rem; font-weight: 900; color: var(--teal); text-transform: uppercase;">Step 01</span>
+                    <h3 style="margin: 8px 0; font-size: 1.1rem; font-weight: 900;">준비물 기초 DB 구축</h3>
+                    <p style="font-size: 0.85rem; line-height: 1.5; color: var(--muted); margin: 0;">`p-ansim-fto` 데이터를 토대로 재난 시 필수 생존용품 18종의 규격, 무게, 가구 유형별 카테고리를 사전 분류하고 정리했습니다.</p>
+                </div>
+                <div class="process-step">
+                    <span style="font-size: 0.8rem; font-weight: 900; color: var(--teal); text-transform: uppercase;">Step 02</span>
+                    <h3 style="margin: 8px 0; font-size: 1.1rem; font-weight: 900;">가방 제작 워크숍 진행</h3>
+                    <p style="font-size: 0.85rem; line-height: 1.5; color: var(--muted); margin: 0;">영유아 부모, 만성질환자, 반려동물 가구 등 다양한 상황을 가진 시민들이 실제로 가방을 패킹하며 우선순위를 매기는 오프라인 세션을 가졌습니다.</p>
+                </div>
+                <div class="process-step">
+                    <span style="font-size: 0.8rem; font-weight: 900; color: var(--teal); text-transform: uppercase;">Step 03</span>
+                    <h3 style="margin: 8px 0; font-size: 1.1rem; font-weight: 900;">행동 지침 도출</h3>
+                    <p style="font-size: 0.85rem; line-height: 1.5; color: var(--muted); margin: 0;">각 용품별로 단순히 챙기는 걸 넘어 '대피소 혹은 이동 과정에서 이를 어떻게 활용하는지'에 대한 시민 관점의 구체적인 액션 성명서를 작성했습니다.</p>
+                </div>
+                <div class="process-step">
+                    <span style="font-size: 0.8rem; font-weight: 900; color: var(--teal); text-transform: uppercase;">Step 04</span>
+                    <h3 style="margin: 8px 0; font-size: 1.1rem; font-weight: 900;">백팩 시뮬레이터 개발</h3>
+                    <p style="font-size: 0.85rem; line-height: 1.5; color: var(--muted); margin: 0;">가구 구성 및 무게 중심 한계에 따라 생존 용품이 가방에 직관적으로 실리는 반응형 웹 프로토타입 시뮬레이터를 최종 구현했습니다.</p>
+                </div>
             </div>
         </section>
-        <section class="section muted">
+
+        <!-- Step 1 & 2: Citizens' Voice & Persona Insights -->
+        <section class="section">
+            <!-- Citizens' Voice Section -->
+            <div class="quotes-section" style="margin-bottom: 50px;">
+                <div class="section-heading compact">
+                    <p class="eyebrow">User Voice (Step 02)</p>
+                    <h2>시민 반응 및 워크숍 후기</h2>
+                    <p>생존 배낭 워크숍에 참여하여 직접 가방을 구성해 본 시민들의 목소리입니다.</p>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-top: 24px;">
+                    <div style="background: #fffbeb; border: 3px solid var(--ink); padding: 24px; box-shadow: 5px 5px 0 var(--ink); transform: rotate(-0.8deg); border-radius: 8px;">
+                        <p style="font-size: 0.95rem; line-height: 1.6; font-style: italic; margin-bottom: 16px; font-weight: 800; color: var(--ink);">
+                            "아기 엄마 입장에선 재난 시 대피소에서 물을 끓이거나 젖병을 소독하는 것이 현실적으로 불가능하다는 지적을 듣고 머리를 한 대 맞은 기분이었습니다. 액상 분유와 일회용 젖병, 양손을 가볍게 해주는 밀착형 아기띠를 가방에 챙겨두니 든든합니다."
+                        </p>
+                        <div style="font-size: 0.85rem; font-weight: 900; text-align: right; color: var(--muted);">- 워크숍 참여 영유아 부모</div>
+                    </div>
+                    <div style="background: #f0f9ff; border: 3px solid var(--ink); padding: 24px; box-shadow: 5px 5px 0 var(--ink); transform: rotate(0.6deg); border-radius: 8px;">
+                        <p style="font-size: 0.95rem; line-height: 1.6; font-style: italic; margin-bottom: 16px; font-weight: 800; color: var(--ink);">
+                            "대피소 구호 물품에 당뇨약이나 천식 흡입기 같은 개인용 만성질환 약품은 비축되어 있지 않다는 것을 처음 깨달았습니다. 나 같은 사람들은 물보다 평소 복약하던 2주치 약품과 복약 지도서가 진짜 생명줄이라는 것을 절감했습니다."
+                        </p>
+                        <div style="font-size: 0.85rem; font-weight: 900; text-align: right; color: var(--muted);">- 워크숍 참여 만성 질환 어르신</div>
+                    </div>
+                    <div style="background: #fff1f2; border: 3px solid var(--ink); padding: 24px; box-shadow: 5px 5px 0 var(--ink); transform: rotate(-0.5deg); border-radius: 8px;">
+                        <p style="font-size: 0.95rem; line-height: 1.6; font-style: italic; margin-bottom: 16px; font-weight: 800; color: var(--ink);">
+                            "반려동물은 대피소 동반 입소가 막히는 경우가 대다수라는 사실을 배우고 정말 막막했습니다. 미리 동물등록 인식표를 챙기고 반려동물 동반 대피 계획을 세울 수 있도록 체크리스트와 수납 무게 한계 알림이 있어 큰 도움이 되었습니다."
+                        </p>
+                        <div style="font-size: 0.85rem; font-weight: 900; text-align: right; color: var(--muted);">- 워크숍 참여 반려 가구인</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Persona Insights Cards -->
             <div class="section-heading compact">
                 <p class="eyebrow">Persona Insights</p>
-                <h2>워크샵 도출 페르소나별 준비 키포인트</h2>
+                <h2>워크숍 도출 페르소나별 준비 키포인트</h2>
             </div>
-            <div class="scenario-grid detailed">
+            <div class="three-col-grid">
                 <article class="scenario-card">
                     <div style="font-size: 0.95rem; font-weight: 900; color: var(--teal); margin-bottom: 8px; display: inline-flex; align-items: center; gap: 6px;">
                         <span style="display: inline-block; width: 8px; height: 8px; background: var(--teal); border-radius: 50%;"></span>
@@ -314,11 +360,17 @@
                         반려동물 동반 가구
                     </div>
                     <h3>인식표, 사료, 그리고 접이식 식기</h3>
-                    <p>반려동물 동반 입소가 제한되는 대피소가 많기 때문에, 동반 가능 대피소 사전 파악과 함께 사료, 이동식 식기, 동물등록 번호가 기재된 인식표가 핵심 대피 정보 카드로 분류되었습니다.</p>
+                    <p>반려동물 동반 입소가 제한되는 대피소가 많기 때문에, 동반 가능 대피소 사전 파악과 함께 사료, 이동식 식기, 동물등록 번호가 기재된 인식표가 핵심 대피 정보 카드로 분류되었습니다. </p>
                 </article>
             </div>
         </section>
-        <section class="section">
+
+        <!-- Step 3: Action Guidelines -->
+        <section class="section muted">
+            <div class="section-heading compact">
+                <p class="eyebrow">Action Guidelines (Step 03)</p>
+                <h2>준비 요령 핵심 발견</h2>
+            </div>
             <div class="finding-list">
                 <article><span>01</span><h3>재난가방은 표준 목록 하나로 끝나지 않습니다.</h3><p>가족 구성과 이동 조건에 따라 꼭 필요한 물품과 들 수 있는 무게가 달라집니다.</p></article>
                 <article><span>02</span><h3>물품명 옆에는 행동 문장이 필요합니다.</h3><p>언제 꺼내고, 누가 사용하며, 사용 뒤 무엇을 확인해야 하는지가 함께 있어야 합니다.</p></article>
@@ -326,51 +378,46 @@
             </div>
         </section>
 
-        <!-- Interactive Checklist Simulator Section -->
-        <section class="section muted" id="checklist-simulator-section">
-            <div class="section-heading compact" style="margin-bottom: 24px;">
-                <p class="eyebrow">Interactive Tool</p>
-                <h2>맞춤형 재난가방 체크리스트 시뮬레이터</h2>
-                <p>가족 구성과 생활 상황에 맞춰 나만의 재난가방 품목을 구성해 보세요. 체크된 조건에 따라 맞춤형 물품과 행동 지침이 실시간으로 추가됩니다.</p>
+        <!-- Step 4: Interactive Simulator Grid -->
+        <section class="section" id="checklist-simulator-section" style="scroll-margin-top: 30px;">
+            <div class="section-heading" style="margin-bottom: 24px;">
+                <p class="eyebrow">Deliverable (Step 04)</p>
+                <h2>내 상황에 최적화된 생존 배낭 시뮬레이터</h2>
+                <p>가구 구성 조건을 설정하여 상황별 필수 용품을 목록화하고, 가방 무게 한계를 체크해보세요.</p>
             </div>
 
-            <!-- Options form -->
-            <div class="checklist-options-box" style="background: var(--paper); border: 3px solid var(--ink); padding: 24px; margin-bottom: 30px; box-shadow: var(--shadow);">
-                <h3 style="margin-top: 0; margin-bottom: 16px; font-size: 1.1rem; font-weight: 900; color: var(--teal); border-bottom: 2px solid var(--line); padding-bottom: 8px;">1단계: 가구의 구성 특성을 선택하세요.</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px;">
-                    <label class="option-label">
-                        <input type="checkbox" checked disabled style="width: 18px; height: 18px; cursor: not-allowed;">
-                        <span>기본 생존용품 (필수)</span>
-                    </label>
-                    <label class="option-label">
+            <div class="checklist-options-box" style="background: var(--soft); border: 3px solid var(--ink); padding: 24px; box-shadow: var(--shadow); margin-bottom: 30px;">
+                <h3 style="margin-top: 0; margin-bottom: 12px; font-weight: 900; font-size: 1.1rem; color: var(--ink);">1단계: 내 생활 상황 및 취약 요소 체크</h3>
+                <p style="margin-top: 0; margin-bottom: 20px; font-size: 0.9rem; color: var(--muted); font-weight: 800;">
+                    해당되는 취약 조건들을 선택하면 대피 가방에 자동으로 반영되며 적재 무게를 실시간으로 측정합니다.
+                </p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;">
+                    <label style="display: flex; align-items: center; gap: 10px; font-weight: 800; cursor: pointer; background: white; border: 2px solid var(--ink); padding: 12px; border-radius: 6px; box-shadow: 2px 2px 0 var(--ink);">
                         <input type="checkbox" id="opt-infant" style="width: 18px; height: 18px; cursor: pointer;">
-                        <span>영유아 동반</span>
+                        👶 영유아 동반 가정
                     </label>
-                    <label class="option-label">
+                    <label style="display: flex; align-items: center; gap: 10px; font-weight: 800; cursor: pointer; background: white; border: 2px solid var(--ink); padding: 12px; border-radius: 6px; box-shadow: 2px 2px 0 var(--ink);">
                         <input type="checkbox" id="opt-illness" style="width: 18px; height: 18px; cursor: pointer;">
-                        <span>만성 질환자 포함</span>
+                        💊 만성 질환자 동반
                     </label>
-                    <label class="option-label">
+                    <label style="display: flex; align-items: center; gap: 10px; font-weight: 800; cursor: pointer; background: white; border: 2px solid var(--ink); padding: 12px; border-radius: 6px; box-shadow: 2px 2px 0 var(--ink);">
                         <input type="checkbox" id="opt-pet" style="width: 18px; height: 18px; cursor: pointer;">
-                        <span>반려동물 동반</span>
+                        🐕 반려동물 가구
                     </label>
-                    <label class="option-label">
+                    <label style="display: flex; align-items: center; gap: 10px; font-weight: 800; cursor: pointer; background: white; border: 2px solid var(--ink); padding: 12px; border-radius: 6px; box-shadow: 2px 2px 0 var(--ink);">
                         <input type="checkbox" id="opt-disability" style="width: 18px; height: 18px; cursor: pointer;">
-                        <span>이동/시각 약자 포함</span>
+                        🧑‍🦽 이동 약자 (휠체어/시각)
                     </label>
                 </div>
             </div>
 
-            <!-- Interactive Simulator Grid Layout -->
             <div class="simulator-grid">
-                <!-- Left Column: Table of items -->
                 <div class="checklist-view-box" style="background: var(--paper); border: 3px solid var(--ink); padding: 24px; box-shadow: var(--shadow); height: 100%;">
                     <div style="display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 20px; border-bottom: 2px solid var(--line); padding-bottom: 12px;">
                         <h3 style="margin: 0; font-size: 1.15rem; font-weight: 900; color: var(--ink);">2단계: 내 상황에 맞춘 생존 배낭 준비 목록</h3>
                         <button id="btn-copy-checklist" class="button secondary" style="font-size: 0.85rem; padding: 6px 14px; min-height: 36px; border: 2px solid var(--ink); cursor: pointer;">목록 텍스트 복사</button>
                     </div>
 
-                    <!-- Live Item Table -->
                     <div class="table-wrap" style="margin: 0;">
                         <table class="checklist-table">
                             <thead>
@@ -387,7 +434,6 @@
                     </div>
                 </div>
                 
-                <!-- Right Column: Interactive Neubrutalist Backpack -->
                 <div class="bag-container" id="interactive-bag-box">
                     <div>
                         <div class="bag-header">
@@ -403,16 +449,13 @@
                             * 왼쪽 표에서 필요한 생존 용품을 체크하면 가방 카드 슬롯에 담깁니다.
                         </div>
                         
-                        <!-- Bag Slot Grid -->
                         <div class="bag-items-grid" id="bag-slots-container">
-                            <!-- Pack cards injected dynamically here -->
                             <div id="bag-empty-message" style="grid-column: 1 / -1; text-align: center; padding: 40px 20px; color: var(--muted); font-weight: 800; font-size: 0.95rem; line-height: 1.5;">
                                 🎒 가방이 비어 있습니다.<br><span style="font-size:0.85rem; font-weight:normal;">왼쪽 표에서 필요한 아이템을 체크해 담아보세요!</span>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- Bag stats & actions -->
                     <div style="border-top: 3px solid var(--ink); padding-top: 16px;">
                         <div id="bag-weight-warning" style="font-size: 0.85rem; font-weight: 800; color: var(--red); margin-bottom: 12px; display: none; background: rgba(167,71,36,0.1); border: 2px solid var(--red); padding: 8px 12px; border-radius: 6px; line-height: 1.4;">
                             ⚠️ 경고: 가방의 총 무게가 권장 한도(여성 10kg, 아동 5kg)를 초과하고 있습니다. 실제 메고 달릴 수 있는 무게인지 검토가 필요합니다!
@@ -702,7 +745,7 @@
                         category: "infant",
                         categoryName: "영유아 동반",
                         weight: 600,
-                        action: "단수 및 정전 시 물을 끓일 수 없으므로 가열이 불필요한 액상 타입 분유와 비닐 리필식 일회용 젖병을 패킹."
+                        action: "단수 및 정전 시 물을 끓일 수 없으므로 가열이 불필요한 액상 타입 분유 and 비닐 리필식 일회용 젖병을 패킹."
                     },
                     {
                         id: "baby_carrier",
@@ -810,10 +853,8 @@
                     disability: document.getElementById("opt-disability")
                 };
 
-                // Track packed state by item id
                 const packedStatus = {};
 
-                // Default check essential items
                 CHECKLIST_ITEMS.forEach(item => {
                     if (item.category === "basic") {
                         packedStatus[item.id] = true;
@@ -865,17 +906,15 @@
                             <td style="padding: 12px; color: var(--muted); font-size: 0.88rem; vertical-align: middle;">${item.action}</td>
                         `;
 
-                        // Add toggle event listener to row checkbox
                         const cb = row.querySelector(".pack-item-checkbox");
                         cb.addEventListener("change", (e) => {
                             packedStatus[item.id] = e.target.checked;
-                            renderChecklist(); // Complete refresh
+                            renderChecklist();
                         });
 
                         tbody.appendChild(row);
                     });
 
-                    // Render Packed Backpack Cards
                     renderBagSlots(filtered);
                 }
 
@@ -883,7 +922,6 @@
                     const slotsContainer = document.getElementById("bag-slots-container");
                     const emptyMsg = document.getElementById("bag-empty-message");
                     
-                    // Clear previous dynamic cards (keep empty message placeholder)
                     const cards = slotsContainer.querySelectorAll(".bag-item-card");
                     cards.forEach(c => c.remove());
 
@@ -894,7 +932,6 @@
                     } else {
                         emptyMsg.style.display = "none";
                         
-                        // Inject packed item cards
                         packedItems.forEach(item => {
                             const card = document.createElement("div");
                             card.className = "bag-item-card";
@@ -909,7 +946,6 @@
                                 </div>
                             `;
 
-                            // Bind remove event on x button click
                             card.querySelector(".remove-btn").addEventListener("click", () => {
                                 packedStatus[item.id] = false;
                                 renderChecklist();
@@ -919,7 +955,6 @@
                         });
                     }
 
-                    // Calculate Bag Stats
                     let totalWeight = 0;
                     packedItems.forEach(item => {
                         totalWeight += item.weight;
@@ -928,7 +963,6 @@
                     const weightBadge = document.getElementById("bag-total-weight-badge");
                     weightBadge.textContent = `총 무게: ${formatWeight(totalWeight)}`;
 
-                    // Alert if total weight exceeds 10kg
                     const weightWarning = document.getElementById("bag-weight-warning");
                     if (totalWeight > 10000) {
                         weightWarning.style.display = "block";
@@ -941,10 +975,8 @@
                     }
                 }
 
-                // Attach change events to option checkboxes
                 Object.values(checkboxes).forEach(cb => {
                     cb.addEventListener("change", () => {
-                        // Reset packed state for categories that get deselected
                         const activeCategories = ["basic"];
                         if (checkboxes.infant.checked) activeCategories.push("infant");
                         if (checkboxes.illness.checked) activeCategories.push("illness");
@@ -960,7 +992,6 @@
                     });
                 });
 
-                // Copy to clipboard logic
                 const btnCopy = document.getElementById("btn-copy-checklist");
                 btnCopy.addEventListener("click", () => {
                     const activeCategories = ["basic"];
@@ -998,13 +1029,11 @@
                     });
                 });
 
-                // Print logic
                 const btnPrint = document.getElementById("btn-print-checklist");
                 btnPrint.addEventListener("click", () => {
                     window.print();
                 });
 
-                // Initial render
                 renderChecklist();
             });
         </script>

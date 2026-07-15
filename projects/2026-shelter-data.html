@@ -213,135 +213,300 @@
             <a href="../blog.html">블로그</a>
         </nav>
     </header>
-    <main>
-        <section class="project-hero case-hero">
-            <div class="project-hero-content" style="position: relative;">
+    <main>        <section class="fluid-hero project-fluid-hero hero-2026">
+            <div class="hero-content-box" style="position: relative; max-width: none !important; width: 100% !important;">
                 <a href="../wiki.html?tag=대피소" class="sticker" style="top: -20px; right: 20px; transform: rotate(-3deg);">대피소 위키 ↗</a>
-                <p class="eyebrow">2026 당신 옆의 공익활동 · Fieldwork + Data Proposal</p>
-                <h1>재난대비, 막연한 정보에서 구체적 경험으로</h1>
-                <p class="lead">안심이는 재난 대비를 특별한 상황을 위한 준비가 아니라 일상 속에서 이해하고 실천할 수 있는 문제로 전환하는 프로젝트입니다. 지도 속 정보로만 존재하는 대피소를 실제로 찾아가 보고, 시민의 시선에서 접근성과 이용 가능성을 확인하며, 그 경험을 함께 기록하고 공유합니다.</p>
-                <div class="fact-row">
+                <p class="eyebrow">2026 당신 옆의 공익활동 · FIELDWORK + DATA PROPOSAL</p>
+                <h1 style="max-width: none !important; width: 100% !important;">재난대비,<br>막연한 정보에서 구체적 경험으로</h1>
+                <p class="lead" style="max-width: none !important; width: 100% !important;">안심이는 재난 대비를 특별한 상황을 위한 준비가 아니라 일상 속에서 이해하고 실천할 수 있는 문제로 전환하는 프로젝트입니다. 지도 속 정보로만 존재하는 대피소를 실제로 찾아가 보고, 시민의 시선에서 접근성과 이용 가능성을 확인하며 그 경험을 함께 기록하고 공유합니다.</p>
+                <div class="fact-row" style="margin-bottom: 24px; max-width: none !important; width: 100% !important;">
                     <span>우리 동네 대피소 탐방대</span>
                     <span>현장 탐방</span>
                     <span>전문가 인터뷰</span>
                     <span>데이터 제안</span>
                 </div>
-                <div class="hero-actions" style="margin-top: 24px; display: flex !important;">
-                    <button id="start-simulation-btn" class="button primary" style="cursor: pointer; border: none; font-family: inherit; font-size: 1.2rem; padding: 12px 30px; min-height: 52px; border-radius: 8px;">대피 시뮬레이션 체험하기</button>
+                <div>
+                    <button id="start-simulation-btn" class="button primary" style="cursor: pointer; border: none; font-family: inherit; font-size: 1.1rem; padding: 12px 28px; min-height: 48px; border-radius: 8px; font-weight: 900; box-shadow: var(--shadow);">
+                        🎮 대피 시뮬레이션 체험하기
+                    </button>
                 </div>
-            </div>
-            <div class="project-hero-media">
-                <img src="../assets/images/hero_2026.png" alt="대피소 탐방과 데이터 제안 히어로 이미지">
             </div>
         </section>
 
         <section class="section project-intro">
-            <div class="case-summary">
-                <div>
-                    <p class="eyebrow">Community</p>
-                    <h2 class="scroll-highlight-trigger"><span class="scroll-highlight">재난 대비를 내 생활과 연결된 경험으로 만듭니다.</span></h2>
+            <div class="case-summary" style="display: block; max-width: 100%; margin: 0; width: 100%;">
+                <p class="eyebrow">Intro</p>
+                <h2 class="scroll-highlight-trigger" style="max-width: none !important; width: 100% !important;"><span class="scroll-highlight">재난 대비를 내 생활과 연결된 경험으로 만듭니다.</span></h2>
+                <p style="margin-top: 16px; max-width: none !important; width: 100% !important; font-size: 1.1rem; line-height: 1.65; color: var(--ink);">안심이는 재난 대피소 지도 위에 찍힌 수많은 점(Point)들이 실제 재난 상황에서 무사히 도착해(Route) 머무를 수 있는 공간(Space)인지 확인하고자 했습니다. 이 과정을 통해 수집된 경험을 바탕으로 우리 동네 대피소 지도, 시민 관점의 이용 가이드, 재난 대비 체크리스트 같은 콘텐츠를 제작하여 재난 대비를 보다 실천 가능한 형태로 확산시키고자 합니다.</p>
+            </div>
+        </section>
+
+        <section class="section" style="border-top: 2px dashed var(--line); padding-top: 40px; margin-top: 20px;">
+            <div class="case-summary" style="display: block; max-width: 100%; margin: 0; width: 100%;">
+                <p class="eyebrow">Problem</p>
+                <h2 class="scroll-highlight-trigger" style="max-width: none !important; width: 100% !important;"><span class="scroll-highlight">대피소 정보는 위치에서 끝나면 충분하지 않습니다.</span></h2>
+                <p style="margin-top: 16px; max-width: none !important; width: 100% !important; font-size: 1.1rem; line-height: 1.65; color: var(--ink);">현장 탐방에서 마주한 가장 큰 의문은 단순히 “대피소가 어디인가”가 아니었습니다. 시민에게 필요한 것은 실제 대피층, 이동 경로, 담당 연락처, 접근성, 동반 조건처럼 도착 전후의 판단을 가능하게 하는 정보였습니다. 가까운 대피소가 곧 갈 수 있는 대피소는 아니며, 갈 수 있는 대피소가 곧 머물 수 있는 대피소도 아닙니다.</p>
+            </div>
+        </section>
+
+        <!-- Project Process Section -->
+        <section class="section" style="border-top: 3px solid var(--ink); padding-top: 40px; margin-top: 20px;">
+            <div class="section-heading compact">
+                <p class="eyebrow">Project Process</p>
+                <h2>프로젝트 추진 프로세스</h2>
+                <p>2026년 대피소 탐방 및 데이터 제안 프로젝트는 다음과 같이 진행되었습니다.</p>
+            </div>
+            <div class="process-flow">
+                <div class="process-step">
+                    <span style="font-size: 0.8rem; font-weight: 900; color: var(--teal); text-transform: uppercase;">Step 01</span>
+                    <h3 style="margin: 8px 0; font-size: 1.1rem; font-weight: 900;">공공데이터 진단</h3>
+                    <p style="font-size: 0.85rem; line-height: 1.5; color: var(--muted); margin: 0;">기존 정부 대피소 데이터를 분석하여 위치·수용면적 외에 시민 행동에 실질적으로 필요한 담당 주체, 연락처 정보의 공백을 진단했습니다.</p>
                 </div>
-                <div class="intro-copy">
-                    <p>안심이는 기존 재난 정보가 사건 중심으로 제공되는 한계를 넘어, 시민의 생활 맥락에서 재난 대비를 다시 바라보고자 시작되었습니다. ‘당신 옆의 공익활동’은 시민이 직접 참여하여 경험을 만들고 공유하는 커뮤니티 기반 활동이라는 점에서 안심이가 지향하는 방향과 맞닿아 있었습니다.</p>
-                    <p>안심이는 “우리 동네 대피소 탐방대” 활동을 중심으로 커뮤니티를 운영합니다. 탐방대원들은 우리 동네 대피소를 직접 찾아가 접근성, 이용 가능성, 주변 환경을 시민의 시선에서 확인하고, 필요 시 대피소 관리자 인터뷰를 통해 실제 운영 방식과 숨겨진 정보를 확인합니다.</p>
-                    <p>이 과정을 통해 수집된 경험을 바탕으로 우리 동네 대피소 지도, 시민 관점의 이용 가이드, 재난 대비 체크리스트 같은 콘텐츠를 제작하여 재난 대비를 보다 실천 가능한 형태로 확산시키고자 합니다.</p>
+                <div class="process-step">
+                    <span style="font-size: 0.8rem; font-weight: 900; color: var(--teal); text-transform: uppercase;">Step 02</span>
+                    <h3 style="margin: 8px 0; font-size: 1.1rem; font-weight: 900;">시민 탐방 및 인터뷰</h3>
+                    <p style="font-size: 0.85rem; line-height: 1.5; color: var(--muted); margin: 0;">휠체어 사용자, 시각 장애인 페르소나와 함께 대피소 입구 및 진입로의 턱, 유도블록 부재를 관찰하고 구호 전문가와 108분간 심층 면담을 가졌습니다.</p>
+                </div>
+                <div class="process-step">
+                    <span style="font-size: 0.8rem; font-weight: 900; color: var(--teal); text-transform: uppercase;">Step 03</span>
+                    <h3 style="margin: 8px 0; font-size: 1.1rem; font-weight: 900;">47개 데이터 항목 정의</h3>
+                    <p style="font-size: 0.85rem; line-height: 1.5; color: var(--muted); margin: 0;">장소 표식, 생활 편의, 진입로 접근 경로 및 안내 체계 등 시민이 이용 전후에 알아야 할 47개 항목을 카테고리화하고 구조화했습니다.</p>
+                </div>
+                <div class="process-step">
+                    <span style="font-size: 0.8rem; font-weight: 900; color: var(--teal); text-transform: uppercase;">Step 04</span>
+                    <h3 style="margin: 8px 0; font-size: 1.1rem; font-weight: 900;">제안서 작성 및 시뮬레이션</h3>
+                    <p style="font-size: 0.85rem; line-height: 1.5; color: var(--muted); margin: 0;">서울연구원 및 관련 부처에 제출할 개선 제안 정책 문안을 구성하고, 대피소 속성 정보 필터링을 체험하는 인터랙티브 모달을 탑재했습니다.</p>
                 </div>
             </div>
         </section>
 
+        <!-- Step 1: Persona Profiles -->
         <section class="section">
-            <div class="case-summary">
-                <div>
-                    <p class="eyebrow">Problem</p>
-                    <h2 class="scroll-highlight-trigger"><span class="scroll-highlight">대피소 정보는 위치에서 끝나면 충분하지 않습니다.</span></h2>
+            <div class="section-heading">
+                <p class="eyebrow">Persona Profiles</p>
+                <h2>재난 약자 퍼소나</h2>
+            </div>
+            
+            <div class="three-col-grid" style="margin-top: 24px;">
+                <!-- Persona 1: Min-woo (Wheelchair) -->
+                <div style="background: var(--paper); border: 3px solid var(--ink); padding: 24px; box-shadow: var(--shadow); border-radius: 8px; display: flex; flex-direction: column; gap: 16px;">
+                    <div style="display: flex; align-items: center; gap: 16px;">
+                        <div style="background: var(--soft); border: 2.5px solid var(--ink); padding: 6px; border-radius: 6px; width: 68px; height: 68px; display: flex; align-items: center; justify-content: center; box-shadow: 2px 2px 0 var(--ink);">
+                            <img src="../assets/images/pixel_avatar_wheelchair.png" alt="민우" style="width: 52px; height: 52px; image-rendering: pixelated; border: 2px solid var(--ink); border-radius: 4px; background: white;">
+                        </div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.2rem; font-weight: 900;">민우 (24세)</h3>
+                            <span style="font-size: 0.8rem; font-weight: 800; color: var(--muted);">지체장애 2급 · 휠체어 탑승</span>
+                        </div>
+                    </div>
+                    
+                    <div style="font-size: 0.88rem; line-height: 1.5; font-weight: 800; color: var(--ink); border-top: 2px dashed var(--line); padding-top: 12px; margin: 0;">
+                        <strong>👤 특성:</strong><br>가까운 대피소가 실제로 접근 가능한지는 별도 문제였습니다. 목적지가 바뀌면 경로 판단과 물리적 위험이 함께 커집니다.
+                    </div>
+                    <div style="font-size: 0.88rem; line-height: 1.5; font-weight: 800; color: var(--ink); margin: 0;">
+                        <strong>🏃 행동:</strong>
+                        <ul style="margin: 4px 0 0 16px; padding: 0; list-style-type: disc;">
+                            <li>포화된 대피소를 피해 목적지를 변경함</li>
+                            <li>대각선 길에서 지도를 다시 확인함</li>
+                            <li>턱과 차량을 피하며 인도로 진입함</li>
+                        </ul>
+                    </div>
+                    <div style="font-size: 0.88rem; line-height: 1.5; font-weight: 800; color: var(--ink); margin: 0;">
+                        <strong>📋 필요한 정보:</strong>
+                        <ul style="margin: 4px 0 0 16px; padding: 0; list-style-type: disc;">
+                            <li>무단차 입구와 경사로 정보</li>
+                            <li>엘리베이터 운행 층수</li>
+                            <li>학교 정문·후문을 구분할 수 있는 안내</li>
+                        </ul>
+                    </div>
+                    <div style="font-size: 0.88rem; line-height: 1.5; font-weight: 800; color: var(--ink); margin: 0;">
+                        <strong>🎒 지참 아이템:</strong>
+                        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 6px;">
+                            <span class="artifact-token icon-wheelchair" style="margin:0; font-size:0.75rem;">휠체어</span>
+                        </div>
+                    </div>
                 </div>
-                <p>현장에서 확인한 문제는 단순히 “대피소가 어디인가”가 아니었습니다. 시민에게 필요한 것은 실제 대피층, 이동 경로, 담당 연락처, 접근성, 동반 조건처럼 도착 전후의 판단을 가능하게 하는 정보였습니다. 가까운 대피소가 곧 갈 수 있는 대피소는 아니며, 갈 수 있는 대피소가 곧 머물 수 있는 대피소도 아닙니다.</p>
+
+                <!-- Persona 2: Hyeon-ah (Infant) -->
+                <div style="background: var(--paper); border: 3px solid var(--ink); padding: 24px; box-shadow: var(--shadow); border-radius: 8px; display: flex; flex-direction: column; gap: 16px;">
+                    <div style="display: flex; align-items: center; gap: 16px;">
+                        <div style="background: var(--soft); border: 2.5px solid var(--ink); padding: 6px; border-radius: 6px; width: 68px; height: 68px; display: flex; align-items: center; justify-content: center; box-shadow: 2px 2px 0 var(--ink);">
+                            <img src="../assets/images/pixel_avatar_infant.png" alt="현아" style="width: 52px; height: 52px; image-rendering: pixelated; border: 2px solid var(--ink); border-radius: 4px; background: white;">
+                        </div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.2rem; font-weight: 900;">현아 (31세)</h3>
+                            <span style="font-size: 0.8rem; font-weight: 800; color: var(--muted);">영유아 동반 가구 · 자녀 1세</span>
+                        </div>
+                    </div>
+                    
+                    <div style="font-size: 0.88rem; line-height: 1.5; font-weight: 800; color: var(--ink); border-top: 2px dashed var(--line); padding-top: 12px; margin: 0;">
+                        <strong>👤 특성:</strong><br>앱과 지도에서 대피소를 찾는 과정이 복잡했고, 아이를 돌보는 행동이 이동 속도와 판단에 계속 영향을 줬습니다.
+                    </div>
+                    <div style="font-size: 0.88rem; line-height: 1.5; font-weight: 800; color: var(--ink); margin: 0;">
+                        <strong>🏃 행동:</strong>
+                        <ul style="margin: 4px 0 0 16px; padding: 0; list-style-type: disc;">
+                            <li>아이를 안고 앱을 확인함</li>
+                            <li>침수 구간에서는 안고, 나머지 구간에서는 손을 잡고 이동함</li>
+                            <li>아이를 안심시키고 보폭을 맞춰 걸음</li>
+                        </ul>
+                    </div>
+                    <div style="font-size: 0.88rem; line-height: 1.5; font-weight: 800; color: var(--ink); margin: 0;">
+                        <strong>📋 필요한 정보:</strong>
+                        <ul style="margin: 4px 0 0 16px; padding: 0; list-style-type: disc;">
+                            <li>유모차 이동 가능 경로</li>
+                            <li>화장실과 대기 공간</li>
+                            <li>야간 운영 여부와 중간 생활 거점</li>
+                        </ul>
+                    </div>
+                    <div style="font-size: 0.88rem; line-height: 1.5; font-weight: 800; color: var(--ink); margin: 0;">
+                        <strong>🎒 지참 아이템:</strong>
+                        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 6px;">
+                            <span class="artifact-token icon-phone" style="margin:0; font-size:0.75rem;">스마트폰 지도</span>
+                            <span class="artifact-token icon-snack" style="margin:0; font-size:0.75rem;">간식</span>
+                            <span class="artifact-token icon-toy" style="margin:0; font-size:0.75rem;">장난감</span>
+                            <span class="artifact-token icon-bag" style="margin:0; font-size:0.75rem;">아이 짐 가방</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Persona 3: Ji-won (Pet Companion - Female avatar pixel_avatar_pet.png) -->
+                <div style="background: var(--paper); border: 3px solid var(--ink); padding: 24px; box-shadow: var(--shadow); border-radius: 8px; display: flex; flex-direction: column; gap: 16px;">
+                    <div style="display: flex; align-items: center; gap: 16px;">
+                        <div style="background: var(--soft); border: 2.5px solid var(--ink); padding: 6px; border-radius: 6px; width: 68px; height: 68px; display: flex; align-items: center; justify-content: center; box-shadow: 2px 2px 0 var(--ink);">
+                            <img src="../assets/images/pixel_avatar_pet.png" alt="지원" style="width: 52px; height: 52px; image-rendering: pixelated; border: 2px solid var(--ink); border-radius: 4px; background: white;">
+                        </div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.2rem; font-weight: 900;">지원 (30세)</h3>
+                            <span style="font-size: 0.8rem; font-weight: 800; color: var(--muted);">반려동물 보호자 · 반려견 1마리</span>
+                        </div>
+                    </div>
+                    
+                    <div style="font-size: 0.88rem; line-height: 1.5; font-weight: 800; color: var(--ink); border-top: 2px dashed var(--line); padding-top: 12px; margin: 0;">
+                        <strong>👤 특성:</strong><br>반려동물 동반 가능 여부만이 아니라 이동 중 배변, 다른 동물과의 거리, 도착 후 머물 공간이 함께 문제가 됐습니다.
+                    </div>
+                    <div style="font-size: 0.88rem; line-height: 1.5; font-weight: 800; color: var(--ink); margin: 0;">
+                        <strong>🏃 행동:</strong>
+                        <ul style="margin: 4px 0 0 16px; padding: 0; list-style-type: disc;">
+                            <li>이동가방에서 반려견을 꺼내 목줄을 하고 걸음</li>
+                            <li>배변과 냄새 맡기로 중간중간 멈춤</li>
+                            <li>다른 동물이 보이면 안아 들어 시야를 가림</li>
+                        </ul>
+                    </div>
+                    <div style="font-size: 0.88rem; line-height: 1.5; font-weight: 800; color: var(--ink); margin: 0;">
+                        <strong>📋 필요한 정보:</strong>
+                        <ul style="margin: 4px 0 0 16px; padding: 0; list-style-type: disc;">
+                            <li>동반 가능 여부</li>
+                            <li>별도 대기 공간</li>
+                            <li>배변 처리와 문의 연락처</li>
+                        </ul>
+                    </div>
+                    <div style="font-size: 0.88rem; line-height: 1.5; font-weight: 800; color: var(--ink); margin: 0;">
+                        <strong>🎒 지참 아이템:</strong>
+                        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 6px;">
+                            <span class="artifact-token icon-carrier" style="margin:0; font-size:0.75rem;">이동가방</span>
+                            <span class="artifact-token icon-leash" style="margin:0; font-size:0.75rem;">목줄</span>
+                            <span class="artifact-token icon-waste" style="margin:0; font-size:0.75rem;">배변용품</span>
+                            <span class="artifact-token icon-map" style="margin:0; font-size:0.75rem;">지도 앱</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="section muted">
-            <div class="section-heading">
-                <p class="eyebrow">Process</p>
-                <h2>진행 흐름</h2>
+        <!-- Place Analysis Section (3col layout based on Field Scenes format) -->
+        <section class="section muted" style="border-top: 3px solid var(--ink); padding-top: 40px; margin-top: 40px;">
+            <div class="section-heading compact">
+                <p class="eyebrow">Location Insights</p>
+                <h2>대피소 장소별 정보 격차 및 실태</h2>
+                <p>2026년 탐방 조사와 전문가 자문을 거쳐 정리한 3대 지정 공간형 대피소의 현실적인 정보 결손 실태입니다.</p>
             </div>
-            <ol class="process-list">
-                <li><strong>공공데이터 읽기</strong><p>통합대피소, 민방공대피소, 지진옥외대피장소 등 기존 데이터가 시민의 판단에 어떤 정보를 주고 무엇을 빠뜨리는지 비교했습니다.</p></li>
-                <li><strong>시민 상황 만들기</strong><p>영유아 동반 가족, 휠체어 이용자, 반려동물 보호자, 지하주차장형 대피소 이용자를 중심으로 탐방 시나리오를 구성했습니다.</p></li>
-                <li><strong>현장 탐방</strong><p>사당·남사초 일대에서 표지판, 출입구, 보행 경로, 내부 안내, 실제 도착 경험을 확인하며 데이터에 없는 공백을 기록했습니다.</p></li>
-                <li><strong>전문가 인터뷰</strong><p>재난구호 현장 경험을 바탕으로 담당주체, 결손정보, 취약계층 접근성, 대피소의 커뮤니티 기능을 데이터 항목으로 번역했습니다.</p></li>
-                <li><strong>데이터 제안</strong><p>접근성, 생활조건, 경로 안내, 운영 주체, 결손정보를 포함하는 공개용 스키마 초안을 만들었습니다.</p></li>
-            </ol>
-        </section>
-
-        <section class="section">
-            <div class="section-heading">
-                <p class="eyebrow">Field Scenes</p>
-                <h2>현장에서 드러난 네 가지 장면</h2>
-            </div>
-            <div class="scenario-grid detailed">
-                <article class="scenario-card">
-                    <h3>영유아 동반 가족</h3>
-                    <p>앱과 지도에서 대피소를 찾는 과정이 복잡했고, 아이를 돌보는 행동이 이동 속도와 판단에 계속 영향을 줬습니다.</p>
-                    <dl class="scene-detail">
-                        <div><dt>행동</dt><dd>아이를 안고 앱을 확인함</dd><dd>침수 구간에서는 안고, 나머지 구간에서는 손을 잡고 이동함</dd><dd>아이를 안심시키고 보폭을 맞춰 걸음</dd></div>
-                        <div><dt>필요한 정보</dt><dd>유모차 이동 가능 경로</dd><dd>화장실과 대기 공간</dd><dd>야간 운영 여부와 중간 생활 거점</dd></div>
-                    </dl>
-                    <div class="artifact-board"><span class="artifact-token icon-phone">스마트폰 지도</span><span class="artifact-token icon-snack">간식</span><span class="artifact-token icon-toy">장난감</span><span class="artifact-token icon-bag">아이 짐 가방</span></div>
+            
+            <div class="three-col-grid" style="margin-top: 24px;">
+                <article class="scenario-card" style="margin: 0; height: 100%;">
+                    <div style="font-size: 0.95rem; font-weight: 900; color: var(--red); margin-bottom: 8px; display: inline-flex; align-items: center; gap: 6px;">
+                        <span style="display: inline-block; width: 8px; height: 8px; background: var(--red); border-radius: 50%;"></span>
+                        지하주차장 (민방위 대피소)
+                    </div>
+                    <h3>잠금 상태 및 불분명한 입구 표식</h3>
+                    <p>사당·남사초 일대 아파트/빌딩 지하주차장을 탐방했을 때, 평상시 보안문이나 차량 게이트로 입구가 완전히 폐쇄되어 비상상황 시 진입 조건 조율 데이터가 전혀 연결되지 않았습니다. 입구 안내 표식 또한 어두운 곳에 방치되어 야간 조명 안내가 시급합니다.</p>
+                    <div class="artifact-tokens">
+                        <span class="artifact-token icon-sign">진입로 게이트 데이터</span>
+                        <span class="artifact-token icon-contact">야간 유도등 표식</span>
+                    </div>
                 </article>
-                <article class="scenario-card">
-                    <h3>휠체어 이용자</h3>
-                    <p>가까운 대피소가 실제로 접근 가능한지는 별도 문제였습니다. 목적지가 바뀌면 경로 판단과 물리적 위험이 함께 커졌습니다.</p>
-                    <dl class="scene-detail">
-                        <div><dt>행동</dt><dd>포화된 대피소를 피해 목적지를 변경함</dd><dd>대각선 길에서 지도를 다시 확인함</dd><dd>턱과 차량을 피하며 인도로 진입함</dd></div>
-                        <div><dt>필요한 정보</dt><dd>무단차 입구와 경사로</dd><dd>엘리베이터 운행 층수</dd><dd>학교 정문·후문을 구분할 수 있는 안내</dd></div>
-                    </dl>
-                    <div class="artifact-board"><span class="artifact-token icon-wheelchair">휠체어</span><span class="artifact-token icon-ramp">경사로·연석</span><span class="artifact-token icon-road">인도·교차로</span><span class="artifact-token icon-sign">정문 안내</span></div>
+                <article class="scenario-card" style="margin: 0; height: 100%;">
+                    <div style="font-size: 0.95rem; font-weight: 900; color: var(--red); margin-bottom: 8px; display: inline-flex; align-items: center; gap: 6px;">
+                        <span style="display: inline-block; width: 8px; height: 8px; background: var(--red); border-radius: 50%;"></span>
+                        지하철역 (대형 민방위 대피소)
+                    </div>
+                    <h3>승강기 미연동과 정전 고립 리스크</h3>
+                    <p>튼튼한 공학적 피난처이지만 지상 보행 경로에서 지하 역사 승강장으로 이어지는 엘리베이터 이동선 및 휠체어 단차 정보가 행정 데이터에 누락되어 있습니다. 정전 시 에스컬레이터 차단을 상정하고 휠체어가 최종 피난할 수 있는 동선 데이터가 연결되어야 합니다.</p>
+                    <div class="artifact-tokens">
+                        <span class="artifact-token icon-elevator">엘리베이터 세부 가동범위</span>
+                        <span class="artifact-token icon-wheel">지하 대피층 동선 안내</span>
+                    </div>
                 </article>
-                <article class="scenario-card">
-                    <h3>반려동물 보호자</h3>
-                    <p>반려동물 동반 가능 여부만이 아니라 이동 중 배변, 다른 동물과의 거리, 도착 후 머물 공간이 함께 문제가 됐습니다.</p>
-                    <dl class="scene-detail">
-                        <div><dt>행동</dt><dd>이동가방에서 반려견을 꺼내 목줄을 하고 걸음</dd><dd>배변과 냄새 맡기로 중간중간 멈춤</dd><dd>다른 동물이 보이면 안아 들어 시야를 가림</dd></div>
-                        <div><dt>필요한 정보</dt><dd>동반 가능 여부</dd><dd>별도 대기 공간</dd><dd>배변 처리와 문의 연락처</dd></div>
-                    </dl>
-                    <div class="artifact-board"><span class="artifact-token icon-carrier">이동가방</span><span class="artifact-token icon-leash">목줄</span><span class="artifact-token icon-waste">배변용품</span><span class="artifact-token icon-map">지도 앱</span></div>
-                </article>
-                <article class="scenario-card">
-                    <h3>지하주차장 대피소</h3>
-                    <p>대피소에 도착해도 어디로 들어가고, 어느 층까지 내려가며, 어디에 머물러야 하는지 판단하기 어려웠습니다.</p>
-                    <dl class="scene-detail">
-                        <div><dt>행동</dt><dd>계단과 엘리베이터 중 무엇을 탈지 고민함</dd><dd>가족 단위 이동 때문에 엘리베이터를 선택함</dd><dd>도착 후 식수, 화장실, 관리자 위치를 찾음</dd></div>
-                        <div><dt>필요한 정보</dt><dd>야간에도 보이는 입구 표식</dd><dd>대피층과 내부 안내도</dd><dd>식수·화장실·대기 위치</dd></div>
-                    </dl>
-                    <div class="artifact-board"><span class="artifact-token icon-sign">대피소 표식</span><span class="artifact-token icon-elevator">엘리베이터 정보</span><span class="artifact-token icon-water">식수·화장실</span><span class="artifact-token icon-floor">대피층 안내</span></div>
+                <article class="scenario-card" style="margin: 0; height: 100%;">
+                    <div style="font-size: 0.95rem; font-weight: 900; color: var(--red); margin-bottom: 8px; display: inline-flex; align-items: center; gap: 6px;">
+                        <span style="display: inline-block; width: 8px; height: 8px; background: var(--red); border-radius: 50%;"></span>
+                        지상 대피소 (학교 강당 / 주민센터)
+                    </div>
+                    <h3>책임 주체 누락 및 입소 정보 공백</h3>
+                    <p>학교 강당 등 지상 대피소는 관리 권한이 교육청과 자치구로 나뉘어 있어 비상 시 실시간 개방 여부와 유선 대표 연락처 정보 부재가 가장 큽니다. 거주를 위한 최소한의 생활 지원 요소(식수 수급, 전자기기 충전 콘센트 등) 정보 비축이 제안되었습니다.</p>
+                    <div class="artifact-tokens">
+                        <span class="artifact-token icon-contact">관리부서 유선 대표번호</span>
+                        <span class="artifact-token icon-pet">휠체어 정문/후문 좌표</span>
+                    </div>
                 </article>
             </div>
         </section>
 
-        <section class="section muted">
-            <div class="section-heading">
-                <p class="eyebrow">Findings</p>
-                <h2>핵심 발견</h2>
-            </div>
-            <div class="finding-list">
-                <article><span>01</span><h3>가까운 대피소와 갈 수 있는 대피소는 다릅니다.</h3><p>이동 조건, 침수 가능성, 우회 여부, 동반 가족의 상황에 따라 실제 선택지는 달라집니다.</p></article>
-                <article><span>02</span><h3>주소만으로는 대피소를 이용할 수 없습니다.</h3><p>실제 대피층, 출입구, 표식, 엘리베이터 운행 범위가 함께 제공되어야 합니다.</p></article>
-                <article><span>03</span><h3>운영 정보가 보이지 않으면 시민은 확인할 곳을 잃습니다.</h3><p>담당 부서와 대표 연락처는 대피소 정보의 보조 항목이 아니라 기본 항목에 가깝습니다.</p></article>
-                <article><span>04</span><h3>취약 상황의 정보 공백은 더 큽니다.</h3><p>휠체어, 영유아, 고령자, 반려동물 동반 상황에서는 “갈 수 있음”과 “머물 수 있음”을 구분해야 합니다.</p></article>
-            </div>
-        </section>
-
-        <section class="section">
+        <!-- Step 2 & 3: 47 Shelter Items Interactive Grid -->
+        <section class="section" id="interactive-data-grid" style="scroll-margin-top: 30px;">
             <div class="section-heading">
                 <p class="eyebrow">Data Proposal</p>
                 <h2>시민이 제안하는 47개 대피소 데이터 항목</h2>
                 <p>재난 상황에서 실제 보행 경로와 머무는 공간으로서 대피소를 이용하기 위해 필요한 데이터 항목 구조입니다. 지자체 및 정부 안전디딤돌의 개선 제안을 위한 초안입니다.</p>
             </div>
 
+            <!-- Custom styling for table column widths -->
+            <style>
+                .proposal-table-fixed {
+                    width: 100% !important;
+                    table-layout: fixed !important;
+                    border-collapse: collapse !important;
+                }
+                .proposal-table-fixed th,
+                .proposal-table-fixed td {
+                    overflow: hidden !important;
+                    text-overflow: ellipsis !important;
+                    word-wrap: break-word !important;
+                    vertical-align: middle !important;
+                    padding: 12px 10px !important;
+                    border: 2px solid var(--ink) !important;
+                }
+                .col-no { width: 8% !important; text-align: center !important; }
+                .col-priority { width: 12% !important; text-align: center !important; }
+                .col-category { width: 15% !important; }
+                .col-item { width: 23% !important; font-weight: 800 !important; }
+                .col-reason { width: 30% !important; }
+                .col-status { width: 12% !important; text-align: center !important; }
+
+                @media (max-width: 900px) {
+                    .proposal-table-fixed {
+                        table-layout: auto !important;
+                    }
+                    .col-no, .col-priority, .col-category, .col-item, .col-reason, .col-status {
+                        width: auto !important;
+                    }
+                }
+            </style>
+
             <!-- Interactive Filters -->
-            <div class="filter-container">
-                <input type="text" id="search-data-items" class="search-input" placeholder="검색어를 입력하세요 (예: 휠체어, 화장실, 연락처)...">
-                <select id="select-category" class="filter-select">
+            <div class="filter-container" style="background: var(--soft); border: 3px solid var(--ink); padding: 24px; box-shadow: var(--shadow); margin-bottom: 24px; display: flex; gap: 16px; flex-wrap: wrap;">
+                <input type="text" id="search-data-items" class="search-input" placeholder="검색어를 입력하세요 (예: 휠체어, 화장실, 연락처)..." style="flex: 1.5; min-width: 250px; padding: 12px 16px; border: 3px solid var(--ink); box-shadow: 3px 3px 0 var(--ink); font-family: inherit; font-size: 1rem; font-weight: 800; height: 48px; box-sizing: border-box;">
+                
+                <select id="select-category" class="filter-select" style="flex: 1; min-width: 180px; padding: 10px 16px; border: 3px solid var(--ink); box-shadow: 3px 3px 0 var(--ink); font-family: inherit; font-size: 1rem; font-weight: 800; background: white; height: 48px; box-sizing: border-box; cursor: pointer;">
                     <option value="all">모든 대분류 카테고리</option>
                     <option value="기본 정보">기본 정보</option>
                     <option value="담당주체">담당주체</option>
@@ -350,7 +515,8 @@
                     <option value="접근 경로·안내">접근 경로 및 안내 표지</option>
                     <option value="동적·특수·기타">현황 및 기타 특수자원</option>
                 </select>
-                <select id="select-disaster" class="filter-select">
+                
+                <select id="select-disaster" class="filter-select" style="flex: 1; min-width: 180px; padding: 10px 16px; border: 3px solid var(--ink); box-shadow: 3px 3px 0 var(--ink); font-family: inherit; font-size: 1rem; font-weight: 800; background: white; height: 48px; box-sizing: border-box; cursor: pointer;">
                     <option value="all">모든 재난 유형</option>
                     <option value="공통">공통 적용</option>
                     <option value="민방위">민방위 전용</option>
@@ -359,7 +525,7 @@
             </div>
 
             <!-- Priority Tabs -->
-            <div class="priority-tabs">
+            <div class="priority-tabs" style="margin-bottom: 24px; display: flex; gap: 8px; flex-wrap: wrap;">
                 <button class="priority-tab-btn active" data-priority="all">전체 중요도</button>
                 <button class="priority-tab-btn" data-priority="P1">최우선 제안 (P1)</button>
                 <button class="priority-tab-btn" data-priority="P2">필수 수집 (P2)</button>
@@ -367,17 +533,17 @@
                 <button class="priority-tab-btn" data-priority="기존">기존 제공중</button>
             </div>
 
-            <!-- Dynamic Table Grid -->
-            <div class="table-wrap">
-                <table class="proposal-table">
+            <!-- Dynamic items Table -->
+            <div class="table-wrap" style="margin: 0;">
+                <table class="proposal-table-fixed">
                     <thead>
-                        <tr>
-                            <th style="width: 6%; text-align: center;">No</th>
-                            <th style="width: 12%;">중요도</th>
-                            <th style="width: 15%;">대분류</th>
-                            <th style="width: 20%;">항목 후보명</th>
-                            <th style="width: 35%;">수집 타당성 및 설명</th>
-                            <th style="width: 12%; text-align: center;">행정공개상태</th>
+                        <tr style="background: var(--soft);">
+                            <th class="col-no">No</th>
+                            <th class="col-priority">중요도</th>
+                            <th class="col-category">대분류</th>
+                            <th class="col-item">항목 후보명</th>
+                            <th class="col-reason">수집 타당성 및 설명</th>
+                            <th class="col-status">행정 공개 상태</th>
                         </tr>
                     </thead>
                     <tbody id="proposal-tbody">
@@ -387,19 +553,22 @@
             </div>
 
             <!-- Show More Button -->
-            <div id="show-more-container" style="text-align: center; margin-top: 20px; display: none;">
-                <button id="btn-show-more" class="button primary" style="font-size: 1rem; padding: 10px 24px; min-height: 44px; border-radius: 8px; cursor: pointer; border: 3px solid var(--ink); box-shadow: var(--shadow); background: var(--yellow); font-family: inherit; font-weight: 800;">
+            <div id="show-more-container" style="text-align: center; margin-top: 24px;">
+                <button id="btn-show-more" class="button primary" style="font-size: 1rem; padding: 12px 28px; min-height: 44px; border-radius: 8px; cursor: pointer; border: 3px solid var(--ink); box-shadow: var(--shadow); background: var(--yellow); font-family: inherit; font-weight: 800;">
                     항목 더 보기 (+0개)
                 </button>
             </div>
 
-            <div class="asset-list project-assets" style="margin-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+            <div class="asset-list project-assets" style="margin-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
                 <span style="font-weight: 800; font-size: 0.9rem; color: var(--muted);" id="table-stats-count">불러오는 중...</span>
                 <a href="../assets/data/shelter-data-proposal.public.json" download class="text-link" style="font-weight: 900;">공개 데이터 스키마 JSON 다운로드 💾</a>
             </div>
+        </section>
 
+        <!-- Step 4: Full Proposal, Suggestions & Interactive Simulation Preview -->
+        <section class="section muted">
             <!-- Collapsible Accordion containing the Full-text Proposal -->
-            <div class="proposal-accordion" id="proposal-text-accordion">
+            <div class="proposal-accordion" id="proposal-text-accordion" style="margin-bottom: 40px;">
                 <button class="accordion-trigger" id="btn-toggle-accordion">
                     <span>📄 시민 관점 대피소 데이터 항목 제안서 전문 보기 (초안 v0.1)</span>
                     <span class="accordion-icon" id="accordion-arrow">+</span>
@@ -458,10 +627,36 @@
                 </div>
             </div>
 
-            <!-- JavaScript for filtering and accordion -->
-            <script>
-                document.addEventListener("DOMContentLoaded", () => {
-                    const SHELTER_DATA = [
+            <!-- Five Policy Suggestions (Recommendations) -->
+            <div class="section-heading">
+                <p class="eyebrow">Recommendations</p>
+                <h2>다섯 가지 정책 개선 제언</h2>
+            </div>
+            <ol class="recommendations" style="margin-bottom: 40px; font-weight: 800;">
+                <li>대피소별 담당 부서와 관리 대표 연락처 데이터를 투명하게 수집하여 상시 공개합니다.</li>
+                <li>실제 대피층, 휠체어 진입 가능한 전용 입구 좌표 등 생활 배리어프리 상태를 명시합니다.</li>
+                <li>비상전력 공급 가능성, 비상식수 위치, 난방/환기 시설 등 장기 대피 지원 편의 항목을 보강합니다.</li>
+                <li>장애인, 임산부, 영유아 동반, 반려동물 동반 등 보호 취약 조건별 대피소 수용 가이드라인을 데이터화합니다.</li>
+                <li>대피소 입구 및 정문에 대피 표식 및 야간 조명을 보강하고, 시민의 오탈자 피드백 창구를 연동합니다.</li>
+            </ol>
+        </section>
+
+        <!-- Project Funding Footer Note -->
+        <section class="section" style="padding: 40px clamp(20px, 5vw, 80px) 60px; text-align: center; border-top: 2px dashed var(--line); background: var(--soft);">
+            <p style="font-size: 0.95rem; font-weight: 800; color: var(--muted); margin: 0;">이 프로젝트는 2026 당신 옆의 공익활동의 지원을 받아 진행했습니다.</p>
+        </section>
+
+        <!-- Simulation Modal Overlay -->
+        <div id="simulation-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.85); z-index: 9999; justify-content: center; align-items: center;">
+            <button id="close-simulation-btn" style="position: absolute; top: 20px; right: 30px; background: none; border: none; color: white; font-size: 48px; cursor: pointer; font-family: sans-serif;">&times;</button>
+            <div style="width: 100%; max-width: 660px; height: 98vh; max-height: 940px; padding: 10px 0;">
+                <iframe id="simulation-iframe" src="" style="width: 100%; height: 100%; border: none; border-radius: 12px; background: #2b333a;"></iframe>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const SHELTER_DATA = [
                         {
                             "no": "1.0",
                             "category": "위치·주소",
@@ -887,211 +1082,183 @@
                         }
                     ];
 
-                    const tbody = document.getElementById("proposal-tbody");
-                    const searchInput = document.getElementById("search-data-items");
-                    const selectCat = document.getElementById("select-category");
-                    const selectDisaster = document.getElementById("select-disaster");
-                    const priorityTabBtns = document.querySelectorAll(".priority-tab-btn");
-                    const countSpan = document.getElementById("table-stats-count");
+                const tbody = document.getElementById("proposal-tbody");
+                const searchInput = document.getElementById("search-data-items");
+                const selectCat = document.getElementById("select-category");
+                const selectDisaster = document.getElementById("select-disaster");
+                const priorityTabBtns = document.querySelectorAll(".priority-tab-btn");
+                const countSpan = document.getElementById("table-stats-count");
+                const showMoreContainer = document.getElementById("show-more-container");
+                const btnShowMore = document.getElementById("btn-show-more");
 
-                    let currentPriorityFilter = "all";
-                    let itemsLimit = 5;
+                let currentPriorityFilter = "all";
+                let itemsLimit = 5;
 
-                    const mapCategoryGroup = (subcat) => {
-                        if (subcat === '위치·기본') return '기본 정보';
-                        if (subcat === '담당주체·연락처') return '담당주체';
-                        if (subcat === '접근성(배리어프리)') return '접근성';
-                        if (subcat === '위생·생활시설') return '위생·생활';
-                        if (subcat.includes('경로') || subcat.includes('안내') || subcat.includes('표지') || subcat.includes('지도품질')) return '접근 경로·안내';
-                        return '동적·특수·기타';
-                    };
+                const mapCategoryGroup = (subcat) => {
+                    if (subcat === '위치·기본') return '기본 정보';
+                    if (subcat === '담당주체·연락처') return '담당주체';
+                    if (subcat === '접근성(배리어프리)') return '접근성';
+                    if (subcat === '위생·생활시설') return '위생·생활';
+                    if (subcat.includes('경로') || subcat.includes('안내') || subcat.includes('표지') || subcat.includes('지도품질')) return '접근 경로·안내';
+                    return '동적·특수·기타';
+                };
 
-                    function renderTable() {
-                        tbody.innerHTML = "";
+                function renderTable() {
+                    tbody.innerHTML = "";
+                    
+                    const query = searchInput.value.toLowerCase();
+                    const catFilter = selectCat.value;
+                    const disasterFilter = selectDisaster.value;
+
+                    let filtered = SHELTER_DATA.filter(item => {
+                        // Search query - checks category name, mapped subcategory, and explanations
+                        const matchesSearch = item.category.toLowerCase().includes(query) || 
+                                              item.item_ko.toLowerCase().includes(query) ||
+                                              item.subcategory.toLowerCase().includes(query);
+
+                        // Category filter
+                        const catGroup = mapCategoryGroup(item.subcategory);
+                        const matchesCat = (catFilter === "all" || catGroup === catFilter);
+
+                        // Disaster applicability filter
+                        let matchesDisaster = true;
+                        if (disasterFilter === "공통") {
+                            matchesDisaster = (item.priority === "공통");
+                        } else if (disasterFilter === "민방위") {
+                            matchesDisaster = (item.priority === "민방위");
+                        } else if (disasterFilter === "자연재난") {
+                            matchesDisaster = (item.priority.includes("자연재난") || item.priority.includes("지진"));
+                        }
+
+                        // Priority filter (tab)
+                        const matchesPriority = (currentPriorityFilter === "all" || item.reason_ko === currentPriorityFilter);
+
+                        return matchesSearch && matchesCat && matchesDisaster && matchesPriority;
+                    });
+
+                    countSpan.textContent = `총 47개 항목 중 ${filtered.length}개 필터링됨 (화면 표시: ${Math.min(itemsLimit, filtered.length)}개)`;
+
+                    const sliced = filtered.slice(0, itemsLimit);
+
+                    sliced.forEach(item => {
+                        const tr = document.createElement("tr");
                         
-                        const query = searchInput.value.toLowerCase();
-                        const catFilter = selectCat.value;
-                        const disasterFilter = selectDisaster.value;
+                        // Map Priority Badge
+                        let pBadgeClass = "";
+                        if (item.reason_ko === "P1") pBadgeClass = "priority-p1";
+                        else if (item.reason_ko === "P2") pBadgeClass = "priority-p2";
+                        else if (item.reason_ko === "P3") pBadgeClass = "priority-p3";
+                        else pBadgeClass = "priority-existing";
 
-                        let filtered = SHELTER_DATA.filter(item => {
-                            // Search query
-                            const matchesSearch = item.category.toLowerCase().includes(query) || 
-                                                  item.item_ko.toLowerCase().includes(query) ||
-                                                  item.subcategory.toLowerCase().includes(query);
+                        // Map Status Badge
+                        let sBadgeClass = "";
+                        if (item.status_ko === "있음") sBadgeClass = "status-exists";
+                        else if (item.status_ko === "부분") sBadgeClass = "status-partial";
+                        else sBadgeClass = "status-missing";
 
-                            // Category filter
-                            const catGroup = mapCategoryGroup(item.subcategory);
-                            const matchesCat = (catFilter === "all" || catGroup === catFilter);
+                        const displayNo = parseFloat(item.no).toFixed(0);
 
-                            // Disaster applicability filter
-                            let matchesDisaster = true;
-                            if (disasterFilter === "공통") {
-                                matchesDisaster = (item.priority === "공통");
-                            } else if (disasterFilter === "민방위") {
-                                matchesDisaster = (item.priority === "민방위");
-                            } else if (disasterFilter === "자연재난") {
-                                matchesDisaster = (item.priority.includes("자연재난") || item.priority.includes("지진"));
-                            }
+                        tr.innerHTML = `
+                            <td style="text-align: center; font-weight: 800;">${displayNo}</td>
+                            <td><span class="pbadge ${pBadgeClass}">${item.reason_ko === "기존" ? "기존 제공" : item.reason_ko + " 제안"}</span></td>
+                            <td style="font-weight: 800; color: var(--muted);">${item.subcategory}</td>
+                            <td style="font-weight: 900; color: var(--teal);">${item.category}</td>
+                            <td>
+                                ${item.item_ko}
+                                <div style="font-size: 0.75rem; color: var(--muted); margin-top: 4px;">적용 재난: ${item.priority}</div>
+                            </td>
+                            <td style="text-align: center;"><span class="pbadge ${sBadgeClass}">${item.status_ko}</span></td>
+                        `;
+                        tbody.appendChild(tr);
+                    });
 
-                            // Priority filter (tab)
-                            const matchesPriority = (currentPriorityFilter === "all" || item.reason_ko === currentPriorityFilter);
-
-                            return matchesSearch && matchesCat && matchesDisaster && matchesPriority;
-                        });
-
-                        const sliced = filtered.slice(0, itemsLimit);
-
-                        sliced.forEach(item => {
-                            const tr = document.createElement("tr");
-                            
-                            // Map Priority Badge
-                            let pBadgeClass = "";
-                            if (item.reason_ko === "P1") pBadgeClass = "priority-p1";
-                            else if (item.reason_ko === "P2") pBadgeClass = "priority-p2";
-                            else if (item.reason_ko === "P3") pBadgeClass = "priority-p3";
-                            else pBadgeClass = "priority-existing";
-
-                            // Map Status Badge
-                            let sBadgeClass = "";
-                            if (item.status_ko === "있음") sBadgeClass = "status-exists";
-                            else if (item.status_ko === "부분") sBadgeClass = "status-partial";
-                            else sBadgeClass = "status-missing";
-
-                            const displayNo = parseFloat(item.no).toFixed(0);
-
-                            tr.innerHTML = `
-                                <td style="text-align: center; font-weight: 800;">${displayNo}</td>
-                                <td><span class="pbadge ${pBadgeClass}">${item.reason_ko === "기존" ? "기존 제공" : item.reason_ko + " 제안"}</span></td>
-                                <td style="font-weight: 800; color: var(--muted);">${item.subcategory}</td>
-                                <td style="font-weight: 900; color: var(--teal);">${item.category}</td>
-                                <td>
-                                    ${item.item_ko}
-                                    <div style="font-size: 0.75rem; color: var(--muted); margin-top: 4px;">적용 재난: ${item.priority}</div>
-                                </td>
-                                <td style="text-align: center;"><span class="pbadge ${sBadgeClass}">${item.status_ko}</span></td>
-                            `;
-                            tbody.appendChild(tr);
-                        });
-
-                        // Show/Hide More Button based on matching items limit
-                        const showMoreContainer = document.getElementById("show-more-container");
-                        const btnShowMore = document.getElementById("btn-show-more");
-                        if (filtered.length > itemsLimit) {
-                            showMoreContainer.style.display = "block";
-                            btnShowMore.textContent = `항목 더 보기 (+${filtered.length - itemsLimit}개)`;
-                        } else {
-                            showMoreContainer.style.display = "none";
-                        }
-
-                        countSpan.textContent = `검색 결과: 총 ${filtered.length}개 항목 중 ${sliced.length}개 표시 중입니다.`;
-                        if (filtered.length === 0) {
-                            tbody.innerHTML = `<tr><td colspan="6" style="text-align: center; padding: 30px; font-weight: 800; color: var(--muted);">검색 조건과 일치하는 제안 항목이 없습니다.</td></tr>`;
-                        }
+                    // Show/Hide More Button based on matching items limit
+                    if (filtered.length > itemsLimit) {
+                        showMoreContainer.style.display = "block";
+                        btnShowMore.textContent = `항목 더 보기 (+${filtered.length - itemsLimit}개)`;
+                    } else {
+                        showMoreContainer.style.display = "none";
                     }
+                }
 
-                    // Attach Event Listeners (Resets limit to 5)
-                    searchInput.addEventListener("input", () => {
-                        itemsLimit = 5;
-                        renderTable();
-                    });
-                    selectCat.addEventListener("change", () => {
-                        itemsLimit = 5;
-                        renderTable();
-                    });
-                    selectDisaster.addEventListener("change", () => {
-                        itemsLimit = 5;
-                        renderTable();
-                    });
-
-                    priorityTabBtns.forEach(btn => {
-                        btn.addEventListener("click", () => {
-                            priorityTabBtns.forEach(b => b.classList.remove("active"));
-                            btn.classList.add("active");
-                            currentPriorityFilter = btn.getAttribute("data-priority");
-                            itemsLimit = 5; // Reset limit
-                            renderTable();
-                        });
-                    });
-
-                    // Show More Button Event Handler
-                    const btnShowMore = document.getElementById("btn-show-more");
-                    btnShowMore.addEventListener("click", () => {
-                        itemsLimit += 15; // Load 15 more items
-                        renderTable();
-                    });
-
-                    // Collapsible Accordion logic
-                    const btnToggle = document.getElementById("btn-toggle-accordion");
-                    const panel = document.getElementById("accordion-panel-content");
-                    const accordionDiv = document.getElementById("proposal-text-accordion");
-                    const arrow = document.getElementById("accordion-arrow");
-
-                    btnToggle.addEventListener("click", () => {
-                        const isOpen = accordionDiv.classList.contains("open");
-                        if (isOpen) {
-                            accordionDiv.classList.remove("open");
-                            panel.style.display = "none";
-                            arrow.textContent = "+";
-                        } else {
-                            accordionDiv.classList.add("open");
-                            panel.style.display = "block";
-                            arrow.textContent = "−";
-                        }
-                    });
-
-                    // Initial Render
+                // Bind Filter inputs and select tags
+                searchInput.addEventListener("input", () => {
+                    itemsLimit = 5;
                     renderTable();
                 });
-            </script>
-        </section>
+                selectCat.addEventListener("change", () => {
+                    itemsLimit = 5;
+                    renderTable();
+                });
+                selectDisaster.addEventListener("change", () => {
+                    itemsLimit = 5;
+                    renderTable();
+                });
 
-        <section class="section muted">
-            <div class="section-heading">
-                <p class="eyebrow">Outputs</p>
-                <h2>결과물</h2>
-            </div>
-            <div class="output-grid">
-                <article>
-                    <strong>현장 탐방 프레임</strong>
-                    <p>시민 상황별로 대피소 접근과 이용 가능성을 확인하는 탐방 관점을 정리했습니다.</p>
-                </article>
-                <article>
-                    <strong>데이터 항목 제안</strong>
-                    <p>담당주체, 접근성, 경로 안내, 생활조건, 결손정보를 포함하는 항목군을 제안했습니다.</p>
-                </article>
-                <article>
-                    <strong>공개 스키마 초안</strong>
-                    <p>웹에서 바로 확인할 수 있는 JSON 형태의 공개 자산을 만들었습니다.</p>
-                </article>
-                <article>
-                    <strong>다음 산출 방향</strong>
-                    <p>시민용 탐방 체크리스트와 지자체 제안서, 데이터 설명서로 확장할 수 있습니다.</p>
-                </article>
-            </div>
-        </section>
+                // Bind Priority Tab buttons clicks
+                priorityTabBtns.forEach(btn => {
+                    btn.addEventListener("click", () => {
+                        priorityTabBtns.forEach(b => b.classList.remove("active"));
+                        btn.classList.add("active");
+                        currentPriorityFilter = btn.getAttribute("data-priority");
+                        itemsLimit = 5;
+                        renderTable();
+                    });
+                });
 
-        <section class="section simulation-section" style="text-align: center; border-top: 1px solid rgba(23, 32, 38, 0.1); border-bottom: 1px solid rgba(23, 32, 38, 0.1); padding: clamp(40px, 6vw, 60px) 20px;">
-            <div style="max-width: 600px; margin: 0 auto;">
-                <p class="eyebrow" style="margin-bottom: 12px;">Simulation</p>
-                <h2 style="font-size: clamp(1.8rem, 4vw, 2.4rem); font-weight: 800; line-height: 1.2; margin-bottom: 24px; letter-spacing: -0.03em;">대피 시뮬레이션</h2>
-                <button id="start-simulation-btn-2" class="button primary" style="cursor: pointer; border: none; font-family: inherit; font-size: 1.1rem; padding: 12px 28px; min-height: 48px; border-radius: 8px;">시뮬레이션 실행하기</button>
-            </div>
-        </section>
+                // Lazy Loading Show More trigger
+                btnShowMore.addEventListener("click", () => {
+                    itemsLimit += 15;
+                    renderTable();
+                });
 
-        <section class="section">
-            <div class="section-heading">
-                <p class="eyebrow">Recommendations</p>
-                <h2>개선 제안</h2>
-            </div>
-            <ol class="recommendations">
-                <li>대피소별 담당 부서와 대표 연락처를 공개합니다.</li>
-                <li>실제 대피층, 입구, 내부 이동 경로를 표시합니다.</li>
-                <li>엘리베이터 운행 범위와 휠체어 접근 가능 여부를 별도 항목으로 제공합니다.</li>
-                <li>반려동물, 영유아, 고령자 등 동반 조건에 필요한 정보를 구분해 제공합니다.</li>
-                <li>현장 입구와 내부에 대피소 표식을 보강합니다.</li>
-                <li>시민이 현장에서 확인한 오류나 누락 정보를 제보할 수 있는 통로를 마련합니다.</li>
-            </ol>
-        </section>
+                // Accordion logic
+                const btnToggle = document.getElementById("btn-toggle-accordion");
+                const panel = document.getElementById("accordion-panel-content");
+                const arrow = document.getElementById("accordion-arrow");
+                btnToggle.addEventListener("click", () => {
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                        arrow.textContent = "+";
+                    } else {
+                        panel.style.display = "block";
+                        arrow.textContent = "−";
+                    }
+                });
+
+                // Simulation Modal Handler
+                const modal = document.getElementById('simulation-modal');
+                const iframe = document.getElementById('simulation-iframe');
+                const startBtn = document.getElementById('start-simulation-btn');
+                const closeBtn = document.getElementById('close-simulation-btn');
+
+                const closeSimulation = () => {
+                    if (modal) modal.style.display = 'none';
+                    if (iframe) iframe.src = '';
+                    document.body.style.overflow = '';
+                };
+
+                const openSimulation = () => {
+                    if (iframe && modal) {
+                        iframe.src = '2026-shelter-simulation.html';
+                        modal.style.display = 'flex';
+                        document.body.style.overflow = 'hidden'; // Prevent scrolling background
+                    }
+                };
+
+                if (startBtn) startBtn.addEventListener('click', openSimulation);
+                if (closeBtn) closeBtn.addEventListener('click', closeSimulation);
+
+                // Listen for exit message from iframe
+                window.addEventListener('message', (event) => {
+                    if (event.data && event.data.action === 'closeSimulation') {
+                        closeSimulation();
+                    }
+                });
+
+                renderTable();
+            });
+        </script>
     </main>
     <footer class="site-footer">
         <div>
