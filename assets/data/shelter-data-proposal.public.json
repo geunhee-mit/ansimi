@@ -7,7 +7,13 @@
         "item_en": "텍스트/좌표",
         "priority": "공통",
         "reason_ko": "기존",
-        "status_ko": "있음"
+        "status_ko": "있음",
+        "source": "행안부 안전디딤돌 등",
+        "collection_difficulty": "하",
+        "interview_timestamp": "01:04:56 / 01:05:35",
+        "field_evidence": "P01: 지도 위치 반영 지연·미갱신",
+        "field_verified": "검증됨(정확도 문제)",
+        "notes": "기존 위치 정보에도 항목별 갱신주기와 최종 갱신일을 함께 공개해야 함"
     },
     {
         "no": "2.0",
@@ -17,7 +23,13 @@
         "item_en": "수치",
         "priority": "공통",
         "reason_ko": "기존",
-        "status_ko": "있음"
+        "status_ko": "있음",
+        "source": "행안부 공공데이터",
+        "collection_difficulty": "하",
+        "interview_timestamp": "1:05:35",
+        "field_evidence": "FL-03/RT-05: 교회 포화로 남사초로 변경",
+        "field_verified": "검증됨(수용여력 중요)",
+        "notes": "기존 항목"
     },
     {
         "no": "3.0",
@@ -27,7 +39,13 @@
         "item_en": "수치(㎡)",
         "priority": "공통",
         "reason_ko": "기존",
-        "status_ko": "있음"
+        "status_ko": "있음",
+        "source": "행안부 공공데이터",
+        "collection_difficulty": "하",
+        "interview_timestamp": "1:05:35",
+        "field_evidence": "이번 회차 미관찰",
+        "field_verified": "미검증",
+        "notes": "기존 항목"
     },
     {
         "no": "4.0",
@@ -37,17 +55,29 @@
         "item_en": "범주",
         "priority": "공통",
         "reason_ko": "기존",
-        "status_ko": "있음"
+        "status_ko": "있음",
+        "source": "행안부 공공데이터",
+        "collection_difficulty": "하",
+        "interview_timestamp": "01:04:05 / 01:05:35",
+        "field_evidence": "P01: 민방위대피소 유형 혼란",
+        "field_verified": "검증됨",
+        "notes": "지진(운동장)·민방위(지하주차장·지하철)·수해(강당)로 분리"
     },
     {
         "no": "5.0",
         "category": "관리 담당 부서",
         "subcategory": "담당주체·연락처",
-        "item_ko": "대피소를 실제 관할하는 부서(사회복지과/주민복지과/시설물관리과 등)",
+        "item_ko": "대피소를 상시 관할하는 부서와 재난 시 비상 운영조직 구성 여부",
         "item_en": "텍스트",
         "priority": "공통",
         "reason_ko": "P1",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "지자체·주민센터 확인",
+        "collection_difficulty": "중",
+        "interview_timestamp": "01:15:05 / 01:16:46",
+        "field_evidence": "P07: 관리자 알 수 없음",
+        "field_verified": "검증됨",
+        "notes": "상시 담당과 비상 운영체계의 전환 여부를 함께 공개"
     },
     {
         "no": "6.0",
@@ -57,7 +87,13 @@
         "item_en": "연락처",
         "priority": "공통",
         "reason_ko": "P1",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "지자체 확인",
+        "collection_difficulty": "중",
+        "interview_timestamp": "01:15:05 / 01:17:31",
+        "field_evidence": "P07: 관리 주체 연락 불가",
+        "field_verified": "검증됨",
+        "notes": "‘전화번호만 들어가도 큰 정보’. 보직 바뀌어도 유선번호는 유지"
     },
     {
         "no": "7.0",
@@ -67,7 +103,13 @@
         "item_en": "범주",
         "priority": "공통",
         "reason_ko": "P2",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "현장·지자체 확인",
+        "collection_difficulty": "중",
+        "interview_timestamp": "1:21:54",
+        "field_evidence": "P20: 개방 여부 확인 불가",
+        "field_verified": "부분 검증",
+        "notes": "일본은 민간 공동운영"
     },
     {
         "no": "8.0",
@@ -77,7 +119,13 @@
         "item_en": "텍스트",
         "priority": "공통",
         "reason_ko": "P2",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "지방의회 공개정보",
+        "collection_difficulty": "하",
+        "interview_timestamp": "00:48:43 / 00:50:31",
+        "field_evidence": "이번 회차 미관찰",
+        "field_verified": "미검증",
+        "notes": "지역 대표 연락망으로 확대할 경우 사전 동의와 재난 대응 목적·이용기간 제한 필요"
     },
     {
         "no": "9.0",
@@ -87,7 +135,13 @@
         "item_en": "텍스트",
         "priority": "공통",
         "reason_ko": "P2",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "사회연대·자활센터·지자체 사전등록 자원망",
+        "collection_difficulty": "중",
+        "interview_timestamp": "1:18:12",
+        "field_evidence": "이번 회차 미관찰",
+        "field_verified": "미검증",
+        "notes": "니가타현의 사전등록형 광역 제설 자원봉사 운영 사례 참고"
     },
     {
         "no": "10.0",
@@ -97,7 +151,13 @@
         "item_en": "Boolean",
         "priority": "공통",
         "reason_ko": "P1",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "현장 답사",
+        "collection_difficulty": "하",
+        "interview_timestamp": "0:55:25",
+        "field_evidence": "P16~P18: 턱·인도 없음으로 휠체어 이동 곤란",
+        "field_verified": "검증됨",
+        "notes": "취약계층 핵심 정보"
     },
     {
         "no": "11.0",
@@ -107,7 +167,13 @@
         "item_en": "Boolean",
         "priority": "공통",
         "reason_ko": "P1",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "현장 답사",
+        "collection_difficulty": "하",
+        "interview_timestamp": "00:55:25 / 00:59:23",
+        "field_evidence": "P17: 공원 앞 길 턱(연석)",
+        "field_verified": "검증됨(부분)",
+        "notes": ""
     },
     {
         "no": "12.0",
@@ -117,7 +183,13 @@
         "item_en": "Boolean+수치",
         "priority": "공통",
         "reason_ko": "P1",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "현장 답사",
+        "collection_difficulty": "하",
+        "interview_timestamp": "00:22:29 / 00:55:25",
+        "field_evidence": "P04: 엘리베이터 지하1층까지만 운행, 대피소는 지하3~5층 → ‘운행 층 범위’ 속성 추가 필요",
+        "field_verified": "검증됨(정밀화)",
+        "notes": "복합 항목은 설치 여부·대수·운행 가능 층·실제 대피층을 각각의 하위 필드로 분리"
     },
     {
         "no": "13.0",
@@ -127,7 +199,13 @@
         "item_en": "Boolean",
         "priority": "공통",
         "reason_ko": "P1",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "현장 답사",
+        "collection_difficulty": "하",
+        "interview_timestamp": "00:55:25 / 00:59:23",
+        "field_evidence": "이번 회차 미관찰",
+        "field_verified": "미검증",
+        "notes": ""
     },
     {
         "no": "14.0",
@@ -137,7 +215,13 @@
         "item_en": "Boolean",
         "priority": "공통",
         "reason_ko": "P1",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "현장·지자체 확인",
+        "collection_difficulty": "중",
+        "interview_timestamp": "00:55:25 / 00:57:45",
+        "field_evidence": "P12~P15: 학교·아파트 옥상 반려견 동반 불가",
+        "field_verified": "검증됨",
+        "notes": "5가구 이하 통상 동반. 주간돌봄(애견호텔) 필요"
     },
     {
         "no": "15.0",
@@ -147,7 +231,13 @@
         "item_en": "Boolean",
         "priority": "공통",
         "reason_ko": "P1",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "현장 답사",
+        "collection_difficulty": "중",
+        "interview_timestamp": "00:55:25 / 00:55:25",
+        "field_evidence": "이번 회차 미관찰",
+        "field_verified": "미검증",
+        "notes": "청송 10인용 대형 텐트 사례"
     },
     {
         "no": "16.0",
@@ -157,7 +247,13 @@
         "item_en": "Boolean",
         "priority": "공통",
         "reason_ko": "P2",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "현장 답사",
+        "collection_difficulty": "하",
+        "interview_timestamp": "0:56:51",
+        "field_evidence": "P05·P06: 유아 동반 시 간식·짐 부담",
+        "field_verified": "부분 검증",
+        "notes": "휴게소 수유실과 대비되는 결손"
     },
     {
         "no": "17.0",
@@ -167,7 +263,13 @@
         "item_en": "텍스트",
         "priority": "공통",
         "reason_ko": "P2",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "지자체 확인",
+        "collection_difficulty": "중",
+        "interview_timestamp": "00:56:06 / 00:39:28",
+        "field_evidence": "05_Sources: 휠체어·보조기기 대여 연계",
+        "field_verified": "부분(주변자원)",
+        "notes": "행정 버스 하루 2회 등 비현실적 → 보완 필요"
     },
     {
         "no": "18.0",
@@ -177,7 +279,13 @@
         "item_en": "Boolean+수치",
         "priority": "공통",
         "reason_ko": "P1",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "현장 답사",
+        "collection_difficulty": "하",
+        "interview_timestamp": "00:14:21 / 00:31:04",
+        "field_evidence": "이번 회차 미관찰",
+        "field_verified": "미검증",
+        "notes": "초·중학교 강당은 대개 없음"
     },
     {
         "no": "19.0",
@@ -187,7 +295,13 @@
         "item_en": "수치",
         "priority": "공통",
         "reason_ko": "P1",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "현장 답사",
+        "collection_difficulty": "중",
+        "interview_timestamp": "00:30:18 / 01:07:41",
+        "field_evidence": "P06·P15: 화장실 위치 파악 어려움·도착 후 탐색",
+        "field_verified": "검증됨(위치안내 부재)",
+        "notes": "인원당 화장실 기준 존재"
     },
     {
         "no": "20.0",
@@ -197,7 +311,13 @@
         "item_en": "Boolean",
         "priority": "공통",
         "reason_ko": "P2",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "현장 답사",
+        "collection_difficulty": "하",
+        "interview_timestamp": "1:00:16",
+        "field_evidence": "이번 회차 미관찰",
+        "field_verified": "미검증",
+        "notes": "한국은 밥차 의존(일본은 취사 가능)"
     },
     {
         "no": "21.0",
@@ -207,7 +327,13 @@
         "item_en": "Boolean",
         "priority": "공통",
         "reason_ko": "P3",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "현장·민간단체",
+        "collection_difficulty": "중",
+        "interview_timestamp": "00:18:13 / 01:12:37",
+        "field_evidence": "이번 회차 미관찰",
+        "field_verified": "미검증",
+        "notes": "외국인 기름때 등 거부 사례 존재"
     },
     {
         "no": "22.0",
@@ -217,7 +343,13 @@
         "item_en": "Boolean",
         "priority": "공통",
         "reason_ko": "P2",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "현장 답사",
+        "collection_difficulty": "하",
+        "interview_timestamp": "0:55:25",
+        "field_evidence": "이번 회차 미관찰",
+        "field_verified": "미검증",
+        "notes": ""
     },
     {
         "no": "23.0",
@@ -227,7 +359,13 @@
         "item_en": "Boolean",
         "priority": "공통",
         "reason_ko": "P2",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "현장 답사",
+        "collection_difficulty": "중",
+        "interview_timestamp": "1:24:34",
+        "field_evidence": "P04: 정문 야간 시인성(입구) → 신규항목 38·40 참조",
+        "field_verified": "부분(입구로 분리)",
+        "notes": "첫날 밤 조명 문제 흔함"
     },
     {
         "no": "24.0",
@@ -237,7 +375,13 @@
         "item_en": "Boolean",
         "priority": "공통",
         "reason_ko": "P2",
-        "status_ko": "부분"
+        "status_ko": "부분",
+        "source": "통신사·현장",
+        "collection_difficulty": "중",
+        "interview_timestamp": "0:40:28",
+        "field_evidence": "이번 회차 미관찰",
+        "field_verified": "미검증",
+        "notes": "KT 등 통신사 빠르게 기지국 설치"
     },
     {
         "no": "25.0",
@@ -247,7 +391,13 @@
         "item_en": "Boolean",
         "priority": "공통",
         "reason_ko": "P3",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "민간·지자체 비축",
+        "collection_difficulty": "중",
+        "interview_timestamp": "0:58:31",
+        "field_evidence": "이번 회차 미관찰",
+        "field_verified": "미검증",
+        "notes": "바닥생활 어려운 고령자 다수"
     },
     {
         "no": "26.0",
@@ -257,7 +407,13 @@
         "item_en": "범주",
         "priority": "공통",
         "reason_ko": "P1",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "현장 답사",
+        "collection_difficulty": "중",
+        "interview_timestamp": "01:44:48 (달로스)",
+        "field_evidence": "P05·P07: 지하주차장 ‘적당한 곳 서있기’·식수/화장실 불명 = 잠깐 대피",
+        "field_verified": "검증됨",
+        "notes": "집결지와 수일 체류 가능한 임시주거시설을 구분하고, 지자체 지정정보와 연계"
     },
     {
         "no": "27.0",
@@ -267,7 +423,13 @@
         "item_en": "텍스트",
         "priority": "지진·공통",
         "reason_ko": "P2",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "현장 답사",
+        "collection_difficulty": "중",
+        "interview_timestamp": "1:10:54",
+        "field_evidence": "RT-04·RT-05: 까치공원·사당역 등 경유",
+        "field_verified": "부분",
+        "notes": "통신 두절 시 가족 상봉 거점 기능"
     },
     {
         "no": "28.0",
@@ -277,7 +439,13 @@
         "item_en": "텍스트",
         "priority": "민방위",
         "reason_ko": "P2",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "현장 답사",
+        "collection_difficulty": "중",
+        "interview_timestamp": "1:10:54",
+        "field_evidence": "P04~P07: 파이프 노출·식수/화장실/관리자 불명",
+        "field_verified": "검증됨",
+        "notes": ""
     },
     {
         "no": "29.0",
@@ -287,7 +455,13 @@
         "item_en": "Boolean",
         "priority": "공통",
         "reason_ko": "P2",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "현장 답사",
+        "collection_difficulty": "하",
+        "interview_timestamp": "0:41:17",
+        "field_evidence": "P06·P15: 안내·게시판 부재, 도착 후 안내판 탐색",
+        "field_verified": "검증됨",
+        "notes": "일본식 게시판(인원·지원내역) 부재 점검"
     },
     {
         "no": "30.0",
@@ -297,7 +471,13 @@
         "item_en": "텍스트",
         "priority": "공통",
         "reason_ko": "P1",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "현장 답사",
+        "collection_difficulty": "하",
+        "interview_timestamp": "1:24:34",
+        "field_evidence": "P04 사인 없음·P07 관리자/식수 모름",
+        "field_verified": "검증됨",
+        "notes": "★‘없으면 없다고 적어 달라’ — 시민데이터 차별점"
     },
     {
         "no": "31.0",
@@ -307,7 +487,13 @@
         "item_en": "수치",
         "priority": "공통",
         "reason_ko": "P3",
-        "status_ko": "부분"
+        "status_ko": "부분",
+        "source": "군청/희망브리지·적십자 창고",
+        "collection_difficulty": "중",
+        "interview_timestamp": "0:59:23",
+        "field_evidence": "이번 회차 미관찰",
+        "field_verified": "미검증",
+        "notes": "데이터 소재가 분산되어 있음"
     },
     {
         "no": "32.0",
@@ -317,7 +503,13 @@
         "item_en": "수치",
         "priority": "공통",
         "reason_ko": "P3",
-        "status_ko": "부분"
+        "status_ko": "부분",
+        "source": "지자체·민간단체",
+        "collection_difficulty": "중",
+        "interview_timestamp": "00:58:31 / 00:59:23",
+        "field_evidence": "이번 회차 미관찰",
+        "field_verified": "미검증",
+        "notes": "수량 부족 시 즉시 지원 불가"
     },
     {
         "no": "33.0",
@@ -327,7 +519,13 @@
         "item_en": "수치",
         "priority": "공통",
         "reason_ko": "P3",
-        "status_ko": "부분"
+        "status_ko": "부분",
+        "source": "지자체 재정공시",
+        "collection_difficulty": "중",
+        "interview_timestamp": "0:59:23",
+        "field_evidence": "이번 회차 미관찰",
+        "field_verified": "미검증",
+        "notes": "수십억 비축되나 잘 안 씀"
     },
     {
         "no": "34.0",
@@ -337,7 +535,13 @@
         "item_en": "수치",
         "priority": "공통",
         "reason_ko": "P3",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "현장 운영자 입력",
+        "collection_difficulty": "상",
+        "interview_timestamp": "0:42:09",
+        "field_evidence": "RT-05: 교회 포화 → 다른 대피소 이동",
+        "field_verified": "검증됨(혼잡정보 필요)",
+        "notes": "동적·게시판 트랙. 입력 주체는 공무원"
     },
     {
         "no": "35.0",
@@ -347,7 +551,13 @@
         "item_en": "수치",
         "priority": "공통",
         "reason_ko": "P3",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "현장 조사",
+        "collection_difficulty": "상",
+        "interview_timestamp": "00:44:20 / 00:42:09",
+        "field_evidence": "이번 회차 미관찰",
+        "field_verified": "미검증",
+        "notes": "★개인정보 보틀넥. 재난대응 한정 동의 필요"
     },
     {
         "no": "36.0",
@@ -357,7 +567,13 @@
         "item_en": "텍스트",
         "priority": "공통",
         "reason_ko": "P3",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "현장 게시판 입력",
+        "collection_difficulty": "상",
+        "interview_timestamp": "0:41:17",
+        "field_evidence": "이번 회차 미관찰",
+        "field_verified": "미검증",
+        "notes": "일본 게시판 모델. 중복지원 방지·조정용"
     },
     {
         "no": "37.0",
@@ -367,7 +583,13 @@
         "item_en": "텍스트",
         "priority": "공통",
         "reason_ko": "P3",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "현장 운영자 입력",
+        "collection_difficulty": "상",
+        "interview_timestamp": "0:43:37",
+        "field_evidence": "이번 회차 미관찰",
+        "field_verified": "미검증",
+        "notes": "수요조사 미실시가 근본 장벽"
     },
     {
         "no": "38.0",
@@ -377,7 +599,13 @@
         "item_en": "텍스트/좌표",
         "priority": "공통",
         "reason_ko": "P1",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "현장 답사·시설 확인",
+        "collection_difficulty": "중",
+        "interview_timestamp": "—(현장 발견)",
+        "field_evidence": "P19: 정문 몰라 후문 이동 / P04: 정문 야간 시인성 우려",
+        "field_verified": "신규(현장)",
+        "notes": "휠체어·야간에 특히 중요"
     },
     {
         "no": "39.0",
@@ -387,7 +615,13 @@
         "item_en": "Boolean+텍스트",
         "priority": "공통",
         "reason_ko": "P1",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "현장 답사",
+        "collection_difficulty": "하",
+        "interview_timestamp": "—(현장 발견)",
+        "field_evidence": "P04: 사인(대피소 표식) 없음",
+        "field_verified": "신규(현장)",
+        "notes": "‘없음’도 결손정보로 기록(항목30 연계)"
     },
     {
         "no": "40.0",
@@ -397,7 +631,13 @@
         "item_en": "범주",
         "priority": "공통",
         "reason_ko": "P2",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "현장 답사(야간)",
+        "collection_difficulty": "중",
+        "interview_timestamp": "—(현장 발견)",
+        "field_evidence": "P04: 정문 야간 시인성 우려",
+        "field_verified": "신규(현장)",
+        "notes": "실내 취침조명(항목23)과 구분"
     },
     {
         "no": "41.0",
@@ -407,7 +647,13 @@
         "item_en": "Boolean+텍스트",
         "priority": "공통",
         "reason_ko": "P2",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "현장 답사",
+        "collection_difficulty": "중",
+        "interview_timestamp": "—(현장 발견)",
+        "field_evidence": "P06: 식수 위치 파악 못 함",
+        "field_verified": "신규(현장)",
+        "notes": "지하주차장형 대피소에서 특히 부재"
     },
     {
         "no": "42.0",
@@ -417,7 +663,13 @@
         "item_en": "텍스트/이미지",
         "priority": "공통",
         "reason_ko": "P2",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "현장 답사",
+        "collection_difficulty": "중",
+        "interview_timestamp": "—(현장 발견)",
+        "field_evidence": "P06 화장실/식수 위치 모름·P15 도착 후 안내판 탐색",
+        "field_verified": "신규(현장)",
+        "notes": "일본식 게시판(항목29) 연계"
     },
     {
         "no": "43.0",
@@ -427,7 +679,13 @@
         "item_en": "범주",
         "priority": "공통",
         "reason_ko": "P2",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "현장 답사·로드뷰",
+        "collection_difficulty": "중",
+        "interview_timestamp": "—(현장 발견)",
+        "field_evidence": "P17 턱·P18 인도 없음(휠체어)",
+        "field_verified": "신규(현장)",
+        "notes": "대피소가 아닌 ‘경로’ 데이터의 필요성 부각"
     },
     {
         "no": "44.0",
@@ -437,7 +695,13 @@
         "item_en": "범주/좌표",
         "priority": "자연재난(수해)",
         "reason_ko": "P1",
-        "status_ko": "부분"
+        "status_ko": "부분",
+        "source": "서울 열린데이터(수해대피소 공간정보)·침수흔적도",
+        "collection_difficulty": "중",
+        "interview_timestamp": "—(현장 발견)",
+        "field_evidence": "P08 침수로 가까운 길 선택 불가·큰길 우회 / ReadMe 시나리오 A·B",
+        "field_verified": "신규(현장)",
+        "notes": "05_Sources 침수공간정보 활용"
     },
     {
         "no": "45.0",
@@ -447,7 +711,13 @@
         "item_en": "좌표",
         "priority": "공통",
         "reason_ko": "P2",
-        "status_ko": "부분"
+        "status_ko": "부분",
+        "source": "현장 측정·지도 보정",
+        "collection_difficulty": "중",
+        "interview_timestamp": "—(현장 발견)",
+        "field_evidence": "P01 지도 회전 안됨·P08 현위치 미표시로 방위 혼란",
+        "field_verified": "신규(현장)",
+        "notes": "데이터 정확도+전달 UX 과제"
     },
     {
         "no": "46.0",
@@ -457,7 +727,13 @@
         "item_en": "범주",
         "priority": "공통",
         "reason_ko": "P3",
-        "status_ko": "없음"
+        "status_ko": "없음",
+        "source": "현장 운영자·지자체",
+        "collection_difficulty": "상",
+        "interview_timestamp": "—(현장 발견)",
+        "field_evidence": "P20 도착했으나 개방 여부 확인 못 함",
+        "field_verified": "신규(현장)",
+        "notes": "인터뷰의 ‘강당 불 꺼져 있음’과 동일 맥락"
     },
     {
         "no": "47.0",
@@ -467,6 +743,12 @@
         "item_en": "텍스트",
         "priority": "공통",
         "reason_ko": "P2",
-        "status_ko": "부분"
+        "status_ko": "부분",
+        "source": "콘텐츠 제작",
+        "collection_difficulty": "하",
+        "interview_timestamp": "—(현장 발견)",
+        "field_evidence": "P01 민방위대피소 유형 혼란",
+        "field_verified": "신규(현장)",
+        "notes": "산출물(카드뉴스/동네매뉴얼) 직접 연계"
     }
 ]
